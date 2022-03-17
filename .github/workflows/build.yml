@@ -220,6 +220,10 @@ jobs:
         run: |
           make install-js
 
+      - name: Download browser (chromium)
+        run: |
+          npx playwright install chromium
+
       - name: Run browser tests (chromium)
         run: |
           npm run-script test-integration:ci
@@ -270,6 +274,10 @@ jobs:
         run: |
           make install-js
 
+      - name: Download browser (firefox)
+        run: |
+          npx playwright install firefox
+
       - name: Run browser tests (firefox)
         run: |
           npm run-script test-integration:ci
@@ -319,6 +327,10 @@ jobs:
       - name: Install JS dependencies
         run: |
           make install-js
+
+      - name: Download browser (webkit)
+        run: |
+          npx playwright install webkit
 
       - name: Run browser tests (webkit)
         run: |
