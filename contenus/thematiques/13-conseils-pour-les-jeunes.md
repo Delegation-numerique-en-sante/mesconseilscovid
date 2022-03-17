@@ -271,12 +271,13 @@
 .. question:: Comment fonctionnent les vaccins ?
     :level: 3
 
-    Les vaccins contre la Covid font croire à ton système immunitaire (l’armée qui défend ton organisme contre les infections) que tu as été contaminé par la Covid afin qu’il crée des anticorps (des soldats). **Une fois vacciné, ton corps sera prêt à réagir rapidement en cas de contact avec le virus et luttera contre la contamination de manière plus efficace.** Résultat, tu auras moins de symptômes, voire même, tu éviteras la contamination.
+    Les vaccins contre la Covid font croire à ton **système immunitaire** (l’armée qui défend ton organisme contre les infections) que tu as été contaminé par la Covid afin qu’il crée des **anticorps** (des soldats). Une fois vacciné, ton corps sera **prêt à réagir** rapidement en cas de contact avec le virus et luttera contre l’infection de manière plus efficace. Résultat, tu auras **moins de risque** de forme grave, moins de symptômes, voire même tu éviteras la contamination.
 
-    Contre la Covid, 2 types de vaccins sont actuellement disponibles :
+    Il y a **3 types de vaccins** disponibles actuellement. Ils ont tous le même objectif, qui est de présenter un morceau bien particulier du virus (la « protéine S ») au système immunitaire, pour qu’il **apprenne à le reconnaître**. La différence entre ces vaccins, c’est la manière d’amener cette protéine S :
 
-    * les **vaccins à adénovirus** (Janssen et AstraZeneca) : qui injectent une infime partie du virus, désactivé et inoffensif. Cette injection va simuler une contamination et les anticorps vont être crées pour la combattre ;
-    * les **vaccins à ARN messager** (Pfizer et Moderna) : les ARN sont, comme leur nom l’indique, des messagers. Ils ont la recette du virus de la Covid et vont la transmettre à notre système immunitaire afin qu’il crée des anticorps capable de le combattre. Une fois leur travail accompli, ces messagers se dissolvent et disparaissent.
+    * les **vaccins à adénovirus** (Janssen et AstraZeneca) : on injecte un virus inoffensif pour nous, auquel on a ajouté la protéine S, pour qu’il ressemble au virus de la Covid ;
+    * les **vaccins à ARN messager** (Pfizer et Moderna) : on injecte des petites capsules contenant des molécules d’ARNm, qui sont comme une recette pour faire fabriquer la protéine S par nos cellules, et qui disparaissent rapidement une fois leur travail accompli ;
+    * le **vaccin Novavax** : on injecte directement des protéines S accrochées sur des petites capsules.
 
 
 .. question:: Comment des vaccins ont-ils été crées aussi vite ? Sont-ils efficaces et sûrs ?
