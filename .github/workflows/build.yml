@@ -214,6 +214,14 @@ jobs:
       - name: Set up Playwright
         uses: microsoft/playwright-github-action@v1
 
+      - name: Configure Playwright browser cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ matrix.browser }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-${{ matrix.browser }}
+
       - name: Configure npm cache
         uses: actions/cache@v2
         with:
