@@ -14,7 +14,7 @@ install-python:  ## Install Python dependencies.
 	python3 -m pip install -r requirements.txt
 
 install-js:  ## Install JS dependencies.
-	npm install
+	PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1 npm install
 
 uninstall-js:
 	rm -rf ./node_modules
