@@ -11,12 +11,12 @@ export default class extends Controller {
         showElement(this.element)
     }
 
-    open(event) {
+    open(event: Event) {
         event.preventDefault()
         navigator.share({
             title: document.title,
             text: 'Retrouvez cette information sur MesConseilsCovid',
-            url: window.location,
+            url: window.location.href,
         })
     }
 }

@@ -4,6 +4,7 @@
         "strict": true,
         "noImplicitReturns": true,
         "esModuleInterop": true,
-        "target": "es5"
+        "target": "es5",
+        "allowJs": true
     }
 }
