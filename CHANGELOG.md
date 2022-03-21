@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-03-21
+
+* mise à jour du protocole des contacts à risque
+
 ## 2022-03-17
 
 * ajoute les infos sur le 2e rappel (dit 4e dose)
