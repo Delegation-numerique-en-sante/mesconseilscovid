@@ -15,9 +15,9 @@ Il n’est **pas nécessaire de vous isoler** mais :
             * vous avez contracté la Covid, et vous êtes **contagieux** ;
             * {.seulement-si-foyer} les **membres de votre foyer** seront à leur tour considérés comme **cas contact** ;
             * {.seulement-si-vaccine} restez en **isolement au moins 7 jours** à partir de la date du test ;
+            * {.seulement-si-vaccine} en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR).
             * {.seulement-si-non-vaccine} restez en **isolement au moins 10 jours** à partir de la date du test ;
-                - {.seulement-si-vaccine} en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR).
-                - {.seulement-si-non-vaccine} en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 7 jours seulement, suite à test de dépistage négatif (antigénique ou PCR).
+            * {.seulement-si-non-vaccine} en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 7 jours seulement, suite à test de dépistage négatif (antigénique ou PCR).
 
 1. Si vous constatez l’apparition de **symptômes** :
     * Contacter votre médecin et faire un **test de dépistage gratuit** (test PCR ou antigénique) dès que possible.
