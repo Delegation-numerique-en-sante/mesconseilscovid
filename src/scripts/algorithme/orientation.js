@@ -156,12 +156,8 @@ export default class AlgorithmeOrientation {
         )
     }
 
-    get risqueDInfection() {
-        return (
-            this.profil.hasSymptomesActuelsReconnus() ||
-            this.profil.symptomes_passes ||
-            this.profil.hasContactARisqueReconnus()
-        )
+    get symptomesActuelsOuPasses() {
+        return this.profil.hasSymptomesActuelsReconnus() || this.profil.symptomes_passes
     }
 
     get listStatuts() {
@@ -374,30 +370,27 @@ export default class AlgorithmeOrientation {
 
     isolementBlockNamesToDisplay() {
         const blockNames = []
-        if (
-            this.profil.depistagePositifRecent() ||
-            (this.profil.depistageNegatifRecent() &&
-                this.profil.hasContactARisqueReconnus()) ||
-            (this.profil.depistageEnAttenteRecent() && this.risqueDInfection) ||
-            (this.profil.sansDepistage() && this.risqueDInfection)
-        ) {
+        if (this.profil.depistagePositifRecent() || this.symptomesActuelsOuPasses) {
             blockNames.push('conseils-isolement')
+
+            // Recommandations pour les cas confirmés
             if (this.profil.depistagePositifRecent()) {
-                if (this.profil.isCompletementVaccine()) {
-                    blockNames.push('conseils-isolement-depistage-positif-vaccine')
+                if (this.symptomesActuelsOuPasses) {
+                    if (this.profil.isCompletementVaccine()) {
+                        blockNames.push('conseils-isolement-symptomes-vaccine')
+                    } else {
+                        blockNames.push('conseils-isolement-symptomes')
+                    }
                 } else {
-                    blockNames.push('conseils-isolement-depistage-positif')
-                }
-            } else if (
-                this.risqueDInfection &&
-                !this.profil.hasContactARisqueReconnus()
-            ) {
-                if (this.profil.isCompletementVaccine()) {
-                    blockNames.push('conseils-isolement-symptomes-vaccine')
-                } else {
-                    blockNames.push('conseils-isolement-symptomes')
+                    if (this.profil.isCompletementVaccine()) {
+                        blockNames.push('conseils-isolement-depistage-positif-vaccine')
+                    } else {
+                        blockNames.push('conseils-isolement-depistage-positif')
+                    }
                 }
             }
+
+            // Conseils pratiques
             if (this.profil.foyer_autres_personnes) {
                 blockNames.push('conseils-isolement-autres-personnes')
             } else {
