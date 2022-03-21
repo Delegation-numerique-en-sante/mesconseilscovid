@@ -293,7 +293,7 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Le bloc isolement s’affiche avec dépistage négatif et contact à risque', function () {
+        it('Le bloc isolement ne s’affiche pas si contact à risque', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_type: 'rt-pcr',
@@ -303,10 +303,7 @@ describe('Blocs d’informations additionnels', function () {
                 contact_a_risque_meme_lieu_de_vie: true,
             })
             const algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
-                'conseils-isolement',
-                'conseils-isolement-personne-seule',
-            ])
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [])
         })
 
         it('Le bloc isolement s’affiche avec dépistage en attente et symptômes', function () {
@@ -320,7 +317,6 @@ describe('Blocs d’informations additionnels', function () {
             const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
-                'conseils-isolement-symptomes',
                 'conseils-isolement-personne-seule',
             ])
         })
@@ -337,7 +333,6 @@ describe('Blocs d’informations additionnels', function () {
             const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
-                'conseils-isolement-symptomes-vaccine',
                 'conseils-isolement-personne-seule',
             ])
         })
@@ -350,7 +345,6 @@ describe('Blocs d’informations additionnels', function () {
             const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
-                'conseils-isolement-symptomes',
                 'conseils-isolement-personne-seule',
             ])
         })
@@ -364,7 +358,6 @@ describe('Blocs d’informations additionnels', function () {
             const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
-                'conseils-isolement-symptomes',
                 'conseils-isolement-autres-personnes',
             ])
         })
