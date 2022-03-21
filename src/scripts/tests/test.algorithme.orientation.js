@@ -305,7 +305,6 @@ describe('Blocs d’informations additionnels', function () {
             const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
-                'conseils-isolement-contact-a-risque',
                 'conseils-isolement-personne-seule',
             ])
         })

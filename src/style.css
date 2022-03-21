@@ -854,7 +854,6 @@ footer .legals {
 .statut-antigenique-negatif-fragile,
 .statut-asymptomatique,
 .statut-asymptomatique-positif-autotest,
-.statut-contact-a-risque-non-vaccine,
 .statut-positif-symptomatique-urgent,
 .statut-symptomatique-autotest-positif,
 .statut-symptomatique-en-attente,
@@ -882,7 +881,7 @@ footer .legals {
 .statut-peu-de-risques,
 .suivi-gravite-0,
 .statut-deconfinement,
-.statut-contact-a-risque-vaccine {
+.statut-contact-a-risque {
     background: #7fd5c5;
     border-color: #00ac8c;
 }

@@ -5,8 +5,7 @@ const STATUTS = [
     'antigenique-negatif-fragile',
     'asymptomatique',
     'asymptomatique-positif-autotest',
-    'contact-a-risque-non-vaccine',
-    'contact-a-risque-vaccine',
+    'contact-a-risque',
     'en-attente',
     'personne-fragile',
     'peu-de-risques',
@@ -22,9 +21,8 @@ const STATUTS = [
 // Les blocs de conseils personnels possibles en sortie de l’algorithme.
 const CONSEILS_PERSONNELS = [
     'antigenique-negatif-fragile',
+    'contact-a-risque',
     'contact-a-risque-autre',
-    'contact-a-risque-non-vaccine',
-    'contact-a-risque-vaccine',
     'depistage-positif-autotest-asymptomatique',
     'depistage-positif-autotest-symptomatique',
     'depistage-positif-asymptomatique',
@@ -84,11 +82,7 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.symptomes_passes) {
             symptomes = 'symptomes_passes'
         } else if (this.profil.hasContactARisqueReconnus()) {
-            const completementVaccine = this.profil.isCompletementVaccine()
-            const moinsDe12Ans = this.profil.age < 12
-            if (completementVaccine || moinsDe12Ans) {
-                symptomes = 'contact_a_risque_vaccine'
-            } else if (this.guerisonRecente()) {
+            if (this.guerisonRecente()) {
                 symptomes = 'contact_pas_vraiment_a_risque'
             } else {
                 symptomes = 'contact_a_risque'
@@ -211,8 +205,6 @@ export default class AlgorithmeOrientation {
 
             case 'positif_contact_a_risque':
             case 'positif_contact_a_risque_meme_lieu_de_vie':
-            case 'positif_contact_a_risque_meme_lieu_de_vie_vaccine':
-            case 'positif_contact_a_risque_vaccine':
             case 'positif_contact_pas_vraiment_a_risque':
             case 'positif_asymptomatique':
                 return {
@@ -222,8 +214,6 @@ export default class AlgorithmeOrientation {
 
             case 'autotest_positif_contact_a_risque':
             case 'autotest_positif_contact_a_risque_meme_lieu_de_vie':
-            case 'autotest_positif_contact_a_risque_meme_lieu_de_vie_vaccine':
-            case 'autotest_positif_contact_a_risque_vaccine':
             case 'autotest_positif_contact_pas_vraiment_a_risque':
             case 'autotest_positif_asymptomatique':
                 return {
@@ -259,19 +249,6 @@ export default class AlgorithmeOrientation {
                     conseils: 'antigenique-negatif-fragile',
                 }
 
-            case 'negatif_contact_a_risque_vaccine':
-            case 'antigenique_negatif_fragile_contact_a_risque_vaccine':
-            case 'en_attente_contact_a_risque_vaccine':
-            case 'pas_teste_contact_a_risque_vaccine':
-            case 'negatif_contact_a_risque_meme_lieu_de_vie_vaccine':
-            case 'antigenique_negatif_fragile_contact_a_risque_meme_lieu_de_vie_vaccine':
-            case 'en_attente_contact_a_risque_meme_lieu_de_vie_vaccine':
-            case 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine':
-                return {
-                    statut: 'contact-a-risque-vaccine',
-                    conseils: 'contact-a-risque-vaccine',
-                }
-
             case 'negatif_contact_a_risque':
             case 'antigenique_negatif_fragile_contact_a_risque':
             case 'en_attente_contact_a_risque':
@@ -281,8 +258,8 @@ export default class AlgorithmeOrientation {
             case 'en_attente_contact_a_risque_meme_lieu_de_vie':
             case 'pas_teste_contact_a_risque_meme_lieu_de_vie':
                 return {
-                    statut: 'contact-a-risque-non-vaccine',
-                    conseils: 'contact-a-risque-non-vaccine',
+                    statut: 'contact-a-risque',
+                    conseils: 'contact-a-risque',
                 }
 
             case 'negatif_contact_pas_vraiment_a_risque':
@@ -411,9 +388,10 @@ export default class AlgorithmeOrientation {
                 } else {
                     blockNames.push('conseils-isolement-depistage-positif')
                 }
-            } else if (this.profil.hasContactARisqueReconnus()) {
-                blockNames.push('conseils-isolement-contact-a-risque')
-            } else if (this.risqueDInfection) {
+            } else if (
+                this.risqueDInfection &&
+                !this.profil.hasContactARisqueReconnus()
+            ) {
                 if (this.profil.isCompletementVaccine()) {
                     blockNames.push('conseils-isolement-symptomes-vaccine')
                 } else {

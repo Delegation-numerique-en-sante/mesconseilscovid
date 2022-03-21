@@ -308,11 +308,11 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page.ready #conseils-personnels-contact-a-risque-non-vaccine'
+                '#page.ready #conseils-personnels-contact-a-risque'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                '7\u00a0jours après la date du dernier contact'
+                'deux jours après avoir appris que vous étiez cas contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
@@ -355,11 +355,11 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page.ready #conseils-personnels-contact-a-risque-non-vaccine'
+                '#page.ready #conseils-personnels-contact-a-risque'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                '7\u00a0jours après la date du dernier contact'
+                'deux jours après avoir appris que vous étiez cas contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
@@ -402,11 +402,11 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page.ready #conseils-personnels-contact-a-risque-non-vaccine'
+                '#page.ready #conseils-personnels-contact-a-risque'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                '7\u00a0jours après la date du dernier contact'
+                'deux jours après avoir appris que vous étiez cas contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
