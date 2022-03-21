@@ -465,9 +465,13 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
     :level: 3
 
-    Si votre enfant en bas âge est cas contact, il doit être **testé immédiatement** (test PCR, PCR salivaire, antigénique). Les tests de dépistage sont toujours **gratuits** pour les enfants. Son accueil en crèche pourra reprendre à condition de présenter une **attestation** parentale de résultat **négatif**. Par sécurité, vous êtes encouragé à réaliser un second test, **7 jours après** la notification de contact à risque pour confirmer que l’enfant n’a pas été contaminé.
+    **Oui**. Si votre enfant en bas âge est **cas contact**, il peut continuer à aller à la crèche, mais il devra faire un **test de dépistage** (test PCR, PCR salivaire, antigénique) à **J+2**. Les tests de dépistage sont toujours **gratuits** pour les enfants.
 
-    Sans test, votre enfant devra rester isolé 7 jours. Si nécessaire, vous pouvez obtenir un **arrêt de travail** pour le garder à la maison.
+    <div class="conseil conseil-jaune">
+
+    Ne pas faire d’**autotest** à un enfant de moins de 3 ans.
+
+    </div>
 
     <div class="voir-aussi">
 
