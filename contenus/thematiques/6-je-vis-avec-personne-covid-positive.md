@@ -10,87 +10,13 @@
     :depth: 3
 
 
-## Vous vivez avec une personne positive à la Covid et…
-
-<details id="personne-positive-schema-vaccinal-incomplet">
-
-<summary>
-
-.. section:: … vous n’êtes pas complètement vacciné(e)
-    :level: 3
-    :folded: true
-
-<div class="explications">
-
-* vous n’avez **pas encore** reçu les doses nécessaires pour votre **vaccination initiale** (1 ou 2 doses) ;
-* **ou** vous avez reçu votre dernière dose depuis **moins de 7 jours** (*Pfizer, Moderna, AstraZeneca*) ou moins de 28 jours (*Janssen*) ;
-* **ou** vous n’avez pas reçu la **dose de rappel** (si nécessaire selon les règles du passe sanitaire) ;
-* **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin.
-
-</div>
-
-<div class="lire-la-suite"><button class="button">Lire la suite</button></div>
-
-</summary>
-
-<p class="big">Voici ce que nous vous conseillons de faire :</p>
-
-#### 1. Isolez-vous
-
-<div class="conseil">
-
-Il faut **vous isoler dès maintenant**, et ce jusqu’au **7<sup>e</sup> jour** suivant votre dernier contact avec la personne positive.
-
-</div>
-
-Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
-
-
-#### 2. Faites un test 7 jours après votre dernier contact avec la personne positive
-
-<div class="conseil">
-
-- Faites un **test de dépistage gratuit** (test PCR ou antigénique) au **7<sup>e</sup> jour** suivant votre dernier contact avec la personne positive.
-
-- Si des **symptômes** se déclarent avant cette date, faites-vous tester sans attendre.
-
-</div>
-
-* Si ce test est **négatif**, et que la période de 7 jours est écoulée, alors vous pourrez mettre fin à votre isolement.
-* Si le test est **positif** :
-    - maintenez votre isolement pendant **10 jours** à partir de la date du test ou du début des symptômes ;
-    - vous pourrez lever l’isolement **dès le 7<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h ;
-    - l’Assurance maladie vous contactera pour prolonger votre arrêt de travail.
-
-</details>
-
-
-<details id="personne-positive-schema-vaccinal-complet">
-
-<summary>
-
-.. section:: … vous êtes complètement vacciné(e)
-    :level: 3
-    :folded: true
-
-<div class="explications">
-
-* vous avez reçu **toutes les doses** pour votre **vaccination initiale** (1 ou 2 doses), et vous avez reçu la dernière dose prévue depuis **plus de 7 jours** (*Pfizer*, *Moderna*, *AstraZeneca*) ou plus de 28 jours (*Janssen*) ;
-* **et** vous avez reçu une dose de **rappel** (si nécessaire selon les règles du passe sanitaire) ;
-* **et** vous ne souffrez pas d’immunodépression.
-
-</div>
-
-<div class="lire-la-suite"><button class="button">Lire la suite</button></div>
-
-</summary>
-
+## Vous vivez avec une personne positive à la Covid
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
 #### 1. Soyez prudent(e)
 
-Si vous êtes **complètement vacciné(e)** et que vous n’avez **pas de symptômes**, alors il n’est **pas nécessaire de vous isoler**. Restez quand même prudent(e) :
+Quel que soit votre **statut vaccinal**, si vous n’avez **pas de symptômes**, alors il n’est **pas nécessaire de vous isoler**. Restez quand même prudent(e) :
 
 * si des **symptômes** apparaissent, faites un test dès que possible et isolez-vous,
 * respectez les **mesures barrières** et portez un **masque** même à la maison ou dans les lieux publics qui ne le demandent pas,
@@ -120,8 +46,8 @@ Ces tests sont toujours **gratuits** quand vous êtes cas contact.
 
 * En cas de test PCR ou antigénique positif, ou de confirmation de l’autotest :
     - vous avez contracté la Covid, et vous êtes **contagieux** ;
-    - restez en **isolement au moins 7 jours** à partir de la date du test ;
-        + en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+    - restez en **isolement au moins 7 jours** à partir de la date du test *(ou 10 jours si vous n’êtes pas complètement vacciné(e))* ;
+        + en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement *(ou 7 jours si vous n’êtes pas complètement vacciné(e))*, suite à test de dépistage négatif (antigénique ou PCR) ;
     - surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     - les **membres de votre foyer** seront à leur tour considérés comme **cas contact**.
 
@@ -132,8 +58,6 @@ Si votre enfant de moins de 16 ans est positif à la Covid, vous pouvez bénéfi
 Attention, si vous ressentez des **symptômes** avant la date prévue d’un autotest de contrôle, faites un test de dépistage gratuit (test PCR ou antigénique) dès que possible, et restez isolé(e) en attendant le résultat.
 
 </div>
-
-</details>
 
 
 ## Comment cohabiter avec une personne positive à la Covid ?
