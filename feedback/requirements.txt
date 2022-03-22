@@ -8,7 +8,7 @@ autoroutes==0.3.5
     # via roll
 biscuits==0.3.0
     # via roll
-dataclasses-json==0.3.8
+dataclasses-json==0.5.7
     # via pykeybasebot
 gunicorn==20.1.0
     # via mesconseilscovid-feedback (setup.py)
