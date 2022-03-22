@@ -86,7 +86,7 @@ regex==2022.3.2
     #   dateparser
 rfc3986[idna2008]==1.5.0
     # via httpx
-selectolax==0.3.6
+selectolax==0.3.7
     # via -r requirements.in
 six==1.16.0
     # via
