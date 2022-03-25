@@ -13,4 +13,4 @@ Le port du **masque** : [Tout ce qu’il faut savoir sur le masque](https://sol
 
 L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19-_aeration-ventilation-climatisation-chauffage_juil_21.pdf)
 
-Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://www.santepubliquefrance.fr/content/download/410011/document_file/483256_spf00003579.pdf)
+Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://www.santepubliquefrance.fr/content/download/422317/document_file/496959_spf00003701.pdf)
