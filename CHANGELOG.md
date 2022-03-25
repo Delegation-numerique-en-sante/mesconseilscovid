@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-03-25
+
+* correction de liens cassés
+
 ## 2022-03-21
 
 * mise à jour du protocole des contacts à risque
