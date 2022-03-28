@@ -26,23 +26,25 @@ export function pageThematique(app) {
         'Navigue vers une thématique depuis une autre thématique'
     )
 
-    Array.from(document.querySelectorAll('dfn')).forEach((elem) => {
-        elem.addEventListener('click', (event) => {
-            event.preventDefault()
-            const id = elem.getAttribute('aria-describedby')
-            if (id) {
-                const defn = document.getElementById(id)
-                if (defn) {
-                    if (elem.classList.contains('open')) {
-                        hideElement(defn)
-                    } else {
-                        showElement(defn)
+    Array.from(document.querySelectorAll('button[aria-describedby^="def-"]')).forEach(
+        (button) => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault()
+                const id = button.getAttribute('aria-describedby')
+                if (id) {
+                    const defn = document.getElementById(id)
+                    if (defn) {
+                        if (button.classList.contains('open')) {
+                            hideElement(defn)
+                        } else {
+                            showElement(defn)
+                        }
+                        button.classList.toggle('open')
                     }
-                    elem.classList.toggle('open')
                 }
-            }
-        })
-    })
+            })
+        }
+    )
 }
 
 function initDetailsSummary() {

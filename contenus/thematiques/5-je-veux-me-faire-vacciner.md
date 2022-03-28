@@ -20,7 +20,7 @@
 
     - Si vous avez **eu la Covid** au moins 3 mois après votre primo-vaccination, vous n’avez **pas besoin** de recevoir de dose de rappel.
 
-    - Si vous avez **plus de 18 ans et 1 mois**, vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre <dfn aria-describedby="def-primo-vaccination">primo-vaccination</dfn>.
+    - Si vous avez **plus de 18 ans et 1 mois**, vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre <button aria-describedby="def-primo-vaccination">primo-vaccination</button>.
 
       <div id="def-primo-vaccination" role="tooltip" hidden>
 

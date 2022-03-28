@@ -1926,12 +1926,12 @@ a.no-type::after {
     margin-bottom: 3rem;
 }
 
-dfn {
+button[aria-describedby^='def-'] {
     font-style: normal;
     text-decoration: #d5dbef underline dotted;
     cursor: pointer;
 }
-dfn::after {
+button[aria-describedby^='def-']::after {
     content: '?';
     display: inline-block;
     margin-left: 4px;
@@ -1945,7 +1945,7 @@ dfn::after {
     text-align: center;
     border-bottom: none;
 }
-dfn.open {
+button[aria-describedby^='def-'].open {
     text-decoration: none;
     background-color: #d5dbef77;
 }
