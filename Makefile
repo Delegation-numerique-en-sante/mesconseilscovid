@@ -139,8 +139,8 @@ src/index.html: build.py construction/*.py construction/directives/*.py \
 
 # Construire les pages thématiques
 $(THEMATIQUES): build.py construction/*.py construction/directives/*.py \
- contenus/meta/*.md contenus/thematiques/*.md contenus/thematiques/formulaires/*.md \
- templates/thematique.html
+ contenus/meta/*.md contenus/lexique/*.md contenus/thematiques/*.md \
+ contenus/thematiques/formulaires/*.md templates/thematique.html
 	python3 build.py thematiques
 
 # Construire la carte du site (pour les robots)

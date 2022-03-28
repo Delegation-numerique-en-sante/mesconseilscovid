@@ -1,4 +1,5 @@
 import re
+from pathlib import Path
 from textwrap import indent
 
 import mistune
@@ -116,7 +117,9 @@ class MarkdownInlineContent(MarkdownContent):
 def render_markdown_file(file_path, markdown_parser):
     source = file_path.read_text()
     templated_source = Template(source).render(
-        formulaire=render_formulaire, tableau_vaccination=render_tableau_vaccination
+        formulaire=render_formulaire,
+        tableau_vaccination=render_tableau_vaccination,
+        lexique=render_lexique,
     )
     return MarkdownContent(templated_source, markdown_parser)
 
@@ -145,6 +148,15 @@ def render_tableau_vaccination(nom_tableau):
     from .thematiques import THEMATIQUES_DIR
 
     path = THEMATIQUES_DIR / "tableaux_vaccination" / f"{nom_tableau}.md"
+    with path.open() as f:
+        template = Template(f.read())
+
+    markdown = template.render()
+    return indent(markdown, "    ").lstrip()
+
+
+def render_lexique(nom):
+    path = Path(__file__).parent.parent / "contenus" / "lexique" / f"{nom}.md"
     with path.open() as f:
         template = Template(f.read())
 
