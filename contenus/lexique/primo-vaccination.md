@@ -1,4 +1,4 @@
-<div id="def-primo-vaccination" role="tooltip" hidden>
+<div id="def-{{ nom }}-{{ contexte }}" role="tooltip" hidden>
 
 <p>On appelle <b>primo-vaccination</b> la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.</p>
 

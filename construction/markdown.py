@@ -155,10 +155,10 @@ def render_tableau_vaccination(nom_tableau):
     return indent(markdown, "    ").lstrip()
 
 
-def render_lexique(nom):
+def render_lexique(nom, contexte=""):
     path = Path(__file__).parent.parent / "contenus" / "lexique" / f"{nom}.md"
     with path.open() as f:
         template = Template(f.read())
 
-    markdown = template.render()
+    markdown = template.render({"nom": nom, "contexte": contexte})
     return indent(markdown, "    ").lstrip()
