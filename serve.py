@@ -33,6 +33,7 @@ PATHS_TO_WATCH = {
     "contenus/actualites/*.toml": ["index"],
     "contenus/config/*.md": ["index"],
     "contenus/conseils/*.md": ["index"],
+    "contenus/lexique/*.md": ["thematiques", "index"],
     "contenus/meta/*.md": ["thematiques", "index"],
     "contenus/questions/*.md": ["index"],
     "contenus/réponses/*.md": ["index"],
