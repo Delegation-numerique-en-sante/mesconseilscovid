@@ -26,11 +26,11 @@ export function pageThematique(app) {
         'Navigue vers une thématique depuis une autre thématique'
     )
 
-    Array.from(document.querySelectorAll('button[aria-describedby^="def-"]')).forEach(
+    Array.from(document.querySelectorAll('button[aria-details^="def-"]')).forEach(
         (button) => {
             button.addEventListener('click', (event) => {
                 event.preventDefault()
-                const id = button.getAttribute('aria-describedby')
+                const id = button.getAttribute('aria-details')
                 if (id) {
                     const defn = document.getElementById(id)
                     if (defn) {

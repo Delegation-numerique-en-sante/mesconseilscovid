@@ -18,15 +18,15 @@
 
     ### Rappel (dit 3<sup>e</sup> dose)
 
-    - Si vous avez **eu la Covid** au moins 3 mois après votre <button aria-describedby="def-primo-vaccination-eu-la-covid">primo-vaccination</button>, vous n’avez **pas besoin** de recevoir de dose de rappel.
+    - Si vous avez **eu la Covid** au moins 3 mois après votre <button aria-details="def-primo-vaccination-eu-la-covid">primo-vaccination</button>, vous n’avez **pas besoin** de recevoir de dose de rappel.
 
     {{ lexique('primo-vaccination', 'eu-la-covid') }}
 
-    - Si vous avez **plus de 18 ans et 1 mois**, vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre <button aria-describedby="def-primo-vaccination-dose-de-rappel">primo-vaccination</button>.
+    - Si vous avez **plus de 18 ans et 1 mois**, vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre <button aria-details="def-primo-vaccination-dose-de-rappel">primo-vaccination</button>.
 
     {{ lexique('primo-vaccination', 'dose-de-rappel') }}
 
-    - Si vous avez entre **12 et 17 ans**, vous pouvez faire un rappel dès **6 mois** après votre <button aria-describedby="def-primo-vaccination-jeunes">primo-vaccination</button>. (Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.)
+    - Si vous avez entre **12 et 17 ans**, vous pouvez faire un rappel dès **6 mois** après votre <button aria-details="def-primo-vaccination-jeunes">primo-vaccination</button>. (Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.)
 
     {{ lexique('primo-vaccination', 'jeunes') }}
 

@@ -1926,7 +1926,7 @@ a.no-type::after {
     margin-bottom: 3rem;
 }
 
-button[aria-describedby^='def-'] {
+button[aria-details^='def-'] {
     border: none;
     background-color: transparent;
     font-family: inherit;
@@ -1939,7 +1939,7 @@ button[aria-describedby^='def-'] {
         border: 2px solid currentcolor;
     }
 }
-button[aria-describedby^='def-']::after {
+button[aria-details^='def-']::after {
     content: '?';
     display: inline-block;
     margin-left: 4px;
@@ -1953,7 +1953,7 @@ button[aria-describedby^='def-']::after {
     text-align: center;
     border-bottom: none;
 }
-button[aria-describedby^='def-'].open {
+button[aria-details^='def-'].open {
     text-decoration: none;
     background-color: #d5dbef77;
 }
