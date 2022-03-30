@@ -1,4 +1,4 @@
-import { hideElement, showElement } from '../../affichage'
+import { toggleElement } from '../../affichage'
 
 export function initialiseLesDefinitions() {
     Array.from(document.querySelectorAll('button[aria-details^="def-"]')).forEach(
@@ -9,11 +9,7 @@ export function initialiseLesDefinitions() {
                 if (id) {
                     const defn = document.getElementById(id)
                     if (defn) {
-                        if (button.classList.contains('open')) {
-                            hideElement(defn)
-                        } else {
-                            showElement(defn)
-                        }
+                        toggleElement(defn)
                         button.classList.toggle('open')
                     }
                 }

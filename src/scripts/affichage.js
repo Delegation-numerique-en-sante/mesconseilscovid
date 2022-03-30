@@ -25,6 +25,16 @@ export function showElement(element) {
     element.classList.add('visible')
 }
 
+export function toggleElement(element) {
+    if (!element) return
+    if (element.hasAttribute('hidden')) {
+        element.removeAttribute('hidden')
+    } else {
+        element.setAttribute('hidden', '')
+    }
+    element.classList.toggle('visible')
+}
+
 export function hideSelector(element, selector) {
     Array.from(element.querySelectorAll(selector)).forEach(hideElement)
 }
