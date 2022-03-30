@@ -1927,9 +1927,17 @@ a.no-type::after {
 }
 
 button[aria-describedby^='def-'] {
-    font-style: normal;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
     text-decoration: #d5dbef underline dotted;
     cursor: pointer;
+
+    @media screen and (-ms-high-contrast: active) {
+        border: 2px solid currentcolor;
+    }
 }
 button[aria-describedby^='def-']::after {
     content: '?';
