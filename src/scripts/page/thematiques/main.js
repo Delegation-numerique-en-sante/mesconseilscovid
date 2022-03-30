@@ -1,8 +1,8 @@
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
-import { hideElement, showElement } from '../../affichage'
 import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
+import { initialiseLesDefinitions } from './definitions'
 import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 
@@ -26,25 +26,7 @@ export function pageThematique(app) {
         'Navigue vers une thématique depuis une autre thématique'
     )
 
-    Array.from(document.querySelectorAll('button[aria-details^="def-"]')).forEach(
-        (button) => {
-            button.addEventListener('click', (event) => {
-                event.preventDefault()
-                const id = button.getAttribute('aria-details')
-                if (id) {
-                    const defn = document.getElementById(id)
-                    if (defn) {
-                        if (button.classList.contains('open')) {
-                            hideElement(defn)
-                        } else {
-                            showElement(defn)
-                        }
-                        button.classList.toggle('open')
-                    }
-                }
-            })
-        }
-    )
+    initialiseLesDefinitions()
 }
 
 function initDetailsSummary() {
