@@ -1,4 +1,4 @@
-import { toggleElement } from '../../affichage'
+import { hideElement, toggleElement } from '../../affichage'
 
 export function initialiseLesDefinitions() {
     Array.from(document.querySelectorAll('button[aria-details^="def-"]')).forEach(
@@ -7,13 +7,14 @@ export function initialiseLesDefinitions() {
                 event.preventDefault()
                 const id = button.getAttribute('aria-details')
                 if (id) {
-                    const defn = document.getElementById(id)
-                    if (defn) {
-                        toggleElement(defn)
-                        button.classList.toggle('open')
-                    }
+                    toggleElement(document.getElementById(id))
                 }
             })
         }
     )
+    Array.from(document.querySelectorAll('button[data-close]')).forEach((button) => {
+        button.addEventListener('click', (event) => {
+            hideElement(event.target.closest('[role="tooltip"]'))
+        })
+    })
 }

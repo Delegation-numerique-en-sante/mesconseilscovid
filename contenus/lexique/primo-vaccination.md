@@ -1,6 +1,10 @@
-<div id="def-{{ nom }}-{{ contexte }}" role="tooltip" hidden>
+<div id="def-{{ nom }}-{{ contexte }}" class="popover" role="tooltip" hidden>
 
-<p>On appelle <b>primo-vaccination</b> la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.</p>
+<div class="popover-arrow"></div>
+<div class="popover-content">
+<button data-close class="popover-close" aria-label="Fermer">×</button>
+
+On appelle **primo-vaccination** la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.
 
 <div class="tableaux-vaccination-complete">
 
@@ -42,6 +46,8 @@
       </tr>
   </tbody>
 </table>
+
+</div>
 
 </div>
 

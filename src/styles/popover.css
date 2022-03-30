@@ -1,0 +1,50 @@
+:root {
+    --popover-arrow-size: 21px;
+    --popover-close-size: 18px;
+    --popover-padding: 1.5rem;
+    --popover-padding-right: 2.5rem;
+}
+.popover-arrow,
+.popover-content {
+    background: white;
+}
+.popover,
+.popover-arrow {
+    box-shadow: rgba(3, 3, 3, 0.32) 2px 8px 16px 8px;
+}
+.popover {
+    position: relative;
+    margin: 0 1rem 2rem 1rem;
+}
+.popover-arrow {
+    width: var(--popover-arrow-size);
+    height: var(--popover-arrow-size);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.popover-content {
+    position: relative;
+    padding: var(--popover-padding);
+    padding-right: var(--popover-padding-right);
+}
+.popover-close {
+    position: absolute;
+    top: calc((var(--popover-padding-right) - var(--popover-close-size)) / 2);
+    right: calc((var(--popover-padding-right) - var(--popover-close-size)) / 2);
+    width: var(--popover-close-size);
+    height: var(--popover-close-size);
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: var(--popover-close-size);
+    cursor: pointer;
+}
+.popover-content > p:first-of-type {
+    margin-top: 0;
+}
+.popover-content > *:last-child {
+    margin-bottom: 0;
+}
