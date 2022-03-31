@@ -275,9 +275,9 @@
 
     Il y a **3 types de vaccins** disponibles actuellement. Ils ont tous le même objectif, qui est de présenter un morceau bien particulier du virus (la « protéine S ») au système immunitaire, pour qu’il **apprenne à le reconnaître**. La différence entre ces vaccins, c’est la manière d’amener cette protéine S :
 
-    * les **vaccins à adénovirus** (Janssen et AstraZeneca) : on injecte un virus inoffensif pour nous, auquel on a ajouté la protéine S, pour qu’il ressemble au virus de la Covid ;
-    * les **vaccins à ARN messager** (Pfizer et Moderna) : on injecte des microscopiques capsules contenant des molécules d’ARNm, qui sont comme une recette pour faire fabriquer la protéine S par nos cellules, et qui disparaissent rapidement une fois leur travail accompli ;
-    * le **vaccin Novavax** : on injecte directement des protéines S accrochées sur des microscopiques capsules.
+    * les **vaccins Janssen et AstraZeneca** : on injecte un virus inoffensif pour nous, auquel on a ajouté la protéine S, pour qu’il ressemble au virus de la Covid ;
+    * les **vaccins Pfizer et Moderna** : on injecte des ARN messagers, qui sont comme une recette pour faire fabriquer la protéine S par nos cellules ;
+    * le **vaccin Novavax** : on injecte directement des protéines S.
 
 
 .. question:: Comment des vaccins ont-ils été crées aussi vite ? Sont-ils efficaces et sûrs ?
