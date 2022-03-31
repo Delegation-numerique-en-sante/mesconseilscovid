@@ -1,12 +1,16 @@
 @import '../node_modules/pikaday/css/pikaday.css';
 
+:root {
+    --bleu-france: #000091;
+}
+
 .pika-mcc-theme .is-today .pika-button {
-    color: #000091;
+    color: var(--bleu-france);
 }
 .pika-mcc-theme .pika-button:hover,
 .pika-mcc-theme .pika-row.pick-whole-week:hover .pika-button {
     color: #fff;
-    background-color: #000091;
+    background-color: var(--bleu-france);
 }
 
 @font-face {
@@ -47,7 +51,7 @@ body {
     }
 }
 a {
-    color: #000091;
+    color: var(--bleu-france);
     text-underline-offset: 3px;
 }
 a:visited {
@@ -166,7 +170,7 @@ a .profil {
     margin: auto;
 }
 h1 {
-    color: #000091;
+    color: var(--bleu-france);
     font-size: 250%;
     text-align: center;
     padding-top: 2rem;
@@ -178,7 +182,7 @@ legend h1 {
     font-size: 175%;
 }
 .block h2 {
-    color: #000091;
+    color: var(--bleu-france);
     font-size: 225%;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
@@ -708,7 +712,7 @@ footer .legals {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    border: 2px solid #000091;
+    border: 2px solid var(--bleu-france);
     border-radius: 8px;
     margin-top: 23px;
     font-family: 'Joy Pixels', 'Apple Color Emoji', 'Noto Sans Emoji', 'Segoe UI Emoji';
@@ -725,7 +729,7 @@ footer .legals {
     content: '';
     position: absolute;
     display: inline-block;
-    background: #000091;
+    background: var(--bleu-france);
     width: 16px;
     height: 2px;
     left: -16px;
@@ -744,7 +748,7 @@ footer .legals {
     margin: 0;
 }
 .timeline-content .timeline-texte {
-    border-left: 2px solid #000091;
+    border-left: 2px solid var(--bleu-france);
     padding: 0.3rem 0.6rem;
     background: #e9ecf7;
 }
@@ -774,7 +778,7 @@ footer .legals {
     content: '';
     position: absolute;
     display: inline-block;
-    background: #000091;
+    background: var(--bleu-france);
     width: 14px;
     height: 14px;
     border-radius: 100px;
@@ -819,7 +823,7 @@ footer .legals {
 .conseils summary h2,
 .conseils summary h3,
 #historique h3 {
-    color: #000091;
+    color: var(--bleu-france);
     font-size: 175%;
     border-radius: 0.35rem;
     margin: 1rem 0;
@@ -887,13 +891,13 @@ footer .legals {
 }
 .statut-bleu {
     background: #d5dbef;
-    border-color: #000091;
+    border-color: var(--bleu-france);
 }
 
 .conseil {
     background: #d5dbef;
     padding: 0.1rem 1rem;
-    border-left: 5px solid #000091;
+    border-left: 5px solid var(--bleu-france);
     margin-bottom: 1.5rem;
 }
 .conseil-orange {
@@ -920,7 +924,7 @@ fieldset:last-of-type {
 fieldset .secondary-title {
     font-size: 120%;
     margin: 2rem 0 0.5rem 0;
-    color: #000091;
+    color: var(--bleu-france);
 }
 fieldset .secondary .details {
     margin-left: 0;
@@ -1122,8 +1126,8 @@ input[type='submit'] {
     margin-top: 2rem;
     padding: 12px 24px;
     text-decoration: none;
-    border: 2px solid #000091;
-    background-color: #000091;
+    border: 2px solid var(--bleu-france);
+    background-color: var(--bleu-france);
     color: #ffffff;
     transform: translate(0px, 0px);
     transition: all 100ms ease-in;
@@ -1165,8 +1169,8 @@ input.button-outline,
 button.button-outline,
 a.button-outline {
     background-color: white;
-    border: 1px solid #000091;
-    color: #000091;
+    border: 1px solid var(--bleu-france);
+    color: var(--bleu-france);
 }
 input.button-invisible {
     background-color: white;
@@ -1179,8 +1183,8 @@ a.button-red {
     color: #fff;
 }
 a.button-feedback {
-    border-color: #000091;
-    color: #000091;
+    border-color: var(--bleu-france);
+    color: var(--bleu-france);
 }
 a.button-feedback-positif {
     background: no-repeat 24px center url('feedback-positif.svg');
@@ -1336,7 +1340,7 @@ input[type='radio'] + label::before {
     width: 22px;
     height: 22px;
     background: white;
-    border: 2px solid #000091;
+    border: 2px solid var(--bleu-france);
     flex-shrink: 0;
 }
 input[type='radio'] + label::before {
@@ -1365,7 +1369,7 @@ input[type='radio'] + label::after {
     top: 6px;
     width: 12px;
     height: 12px;
-    background: #000091;
+    background: var(--bleu-france);
     opacity: 0;
     border-radius: 50%;
 }
@@ -1378,7 +1382,7 @@ input[type='checkbox'] + label span {
 }
 
 input[type='checkbox']:checked + label::before {
-    background: #000091;
+    background: var(--bleu-france);
 }
 input[type='checkbox']:checked + label::after {
     content: '';
@@ -1542,12 +1546,12 @@ a.no-type::after {
 }
 
 .nouveau {
-    border: #000091 solid 1px;
+    border: var(--bleu-france) solid 1px;
     border-radius: 20px;
     padding: 1px 6px;
     font-size: 80%;
     margin-right: 0.4em;
-    background: #000091;
+    background: var(--bleu-france);
     color: #fff;
     font-variant: small-caps;
 }
@@ -1788,7 +1792,7 @@ a.no-type::after {
 }
 .thematique #conseils-block summary h4 {
     padding-top: 0.4rem;
-    color: #000091;
+    color: var(--bleu-france);
 }
 @media only screen and (max-width: 680px) {
     .thematique #conseils-block summary h3,
@@ -1930,7 +1934,7 @@ a.no-type::after {
     a,
     a:link,
     a:visited {
-        color: #000091;
+        color: var(--bleu-france);
         text-decoration: none;
     }
     a[href^='http']::after {

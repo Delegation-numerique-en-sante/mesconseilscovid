@@ -23,6 +23,8 @@
     "parcel-plugin-static-files-copy": "^2.6.0",
     "parcel-plugin-sw-asset-urls": "^0.1.2",
     "playwright": "^1.20.1",
+    "postcss": "^7.0.39",
+    "postcss-custom-properties": "^10.0.0",
     "prettier": "^2.6.1",
     "st": "^3.0.0"
   },
