@@ -115,7 +115,7 @@ Nous vous recommandons de faire un **test PCR nasopharyngé**.
 
 - Si vous êtes complètement vacciné(e), vous devrez faire un **test PCR**, un **test antigénique** ou un **autotest**, deux jours après avoir appris que vous étiez cas contact.
 
-- Si vous êtes complètement vacciné(e), vous devrez faire un **test PCR**, un **test antigénique** à l’issue des 7 jours d’isolement après votre contact à risque.
+- Si vous êtes complètement vacciné(e), vous devrez faire un **test PCR** ou un **test antigénique** à l’issue des 7 jours d’isolement après votre contact à risque.
 
 👉 Pour plus d’infos : [« Je suis cas contact, que faire ? »](cas-contact-a-risque.html)
 
