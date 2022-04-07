@@ -100,6 +100,7 @@ def thematiques():
                 "config_stats_url": responses["config_stats_url"],
                 "meta_feedback_conseils": responses["meta_feedback_conseils"],
                 "meta_unsupported_browser": responses["meta_unsupported_browser"],
+                "meta_bandeau_elections": responses["meta_bandeau_elections"],
                 "meta_pied_de_page": meta_pied_de_page,
             },
         )

@@ -78,7 +78,7 @@ function getAnimationBehavior() {
 }
 
 function scrolleAuSummary() {
-    const summaries = document.querySelectorAll('summary')
+    const summaries = document.querySelectorAll('main summary')
     Array.from(summaries).forEach((summary) => {
         summary.addEventListener('click', () => {
             const detailsElement = summary.parentElement
