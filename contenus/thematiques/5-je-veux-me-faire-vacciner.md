@@ -13,24 +13,38 @@
 
 ## Le rappel vaccinal
 
-.. question:: Quand faire mon rappel ?
+.. question:: Quand faire la 4<sup>e</sup> dose (2<sup>e</sup> rappel) ?
     :level: 3
 
-    ### Rappel (dit 3<sup>e</sup> dose)
+    Vous pouvez recevoir un 2<sup>e</sup> rappel si :
 
-    - Si vous avez **eu la Covid** au moins 3 mois après votre primo-vaccination, vous n’avez **pas besoin** de recevoir de dose de rappel.
+    - vous avez **60 ans** ou plus, dès **6 mois** après votre premier rappel (3<sup>e</sup> dose) ;
+    - vous avez **80 ans** ou plus, dès **3 mois** après votre premier rappel (3<sup>e</sup> dose) ;
+    - vous êtes **immunodéprimé(e)** (quel que soit votre âge), dès **3 mois** après votre premier rappel (3<sup>e</sup> dose).
 
-    - Si vous avez **plus de 18 ans et 1 mois**, vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre primo-vaccination.
+    La 4<sup>e</sup> dose est **recommandée** pour ces catégories, car la protection donnée par la vaccination diminue avec le temps et que le virus de la Covid circule toujours.
 
-    - Si vous avez entre **12 et 17 ans**, vous pouvez faire un rappel dès **6 mois** après votre primo-vaccination. (Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.)
+    Elle n’est **pas obligatoire** pour prolonger la validité du passe sanitaire.
+
+    Le deuxième rappel n’est pas ouvert aux autres catégories de population à l’heure actuelle.
 
 
-    ### Deuxième rappel (dit 4<sup>e</sup> dose)  <span class="nouveau">nouveau</span>
+.. question:: Quand faire la 3<sup>e</sup> dose (1<sup>er</sup> rappel) ?
+    :level: 3
 
-    Si vous êtes **immunodéprimé(e)** ou que vous avez **plus de 80 ans**, nous vous recommandons de faire un **2<sup>e</sup> rappel**, dès **3 mois** après le premier.
+    La date de la 3<sup>e</sup> dose dépend de votre situation.
 
-    Dans les autres cas, un deuxième rappel n’est pas recommandé actuellement.
+    - Vous avez **eu la Covid** au moins 3 mois après votre primo-vaccination : vous n’avez **pas besoin** de recevoir de dose de rappel pour prolonger votre passe sanitaire.
 
+    - Vous avez **plus de 18 ans et 1 mois** : vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre primo-vaccination pour prolonger votre passe sanitaire.
+
+    - Vous avez entre **12 et 17 ans**, vous pouvez faire un rappel dès **6 mois** après votre primo-vaccination. Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.
+
+    <div class="voir-aussi">
+
+    - [J’ai eu la Covid après ma primo-vaccination, comment prolonger mon passe sanitaire ?](pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-sanitaire)
+
+    </div>
 
 .. question:: J’ai été vacciné(e) avec le vaccin Janssen. Comment se passe mon rappel ?
     :level: 3
