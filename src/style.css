@@ -182,13 +182,15 @@ And all declarations are there to revert the presence of the banner.
     left: 0;
     background: #ffcc9f;
     padding: 1rem;
+    z-index: 2;
 }
 .bandeau-elections details {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    max-width: 55rem;
+    max-width: 46rem;
     margin: 0 auto;
+}
+.bandeau-elections details[open] {
+    padding-bottom: 2rem;
 }
 .bandeau-elections details summary .open {
     display: block;
@@ -201,6 +203,11 @@ And all declarations are there to revert the presence of the banner.
 }
 .bandeau-elections details[open] summary .close {
     display: block;
+    position: absolute;
+    bottom: 0;
+    margin: 1rem auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .bandeau-elections summary {
     display: block;
@@ -210,10 +217,14 @@ And all declarations are there to revert the presence of the banner.
     color: #000091;
     text-decoration: underline;
     cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+.bandeau-elections h2 {
+    text-align: center;
 }
 .bandeau-elections ul,
 .bandeau-elections ol {
-    padding-left: 12px;
+    padding-left: 20px;
 }
 .bandeau-elections ol > li {
     margin-bottom: 0.3rem;
