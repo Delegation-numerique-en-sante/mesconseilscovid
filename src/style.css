@@ -202,22 +202,27 @@ And all declarations are there to revert the presence of the banner.
     display: none;
 }
 .bandeau-elections details[open] summary .close {
-    display: block;
     position: absolute;
-    bottom: 0;
-    margin: 1rem auto;
     left: 50%;
+    bottom: 0;
     transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
 }
 .bandeau-elections summary {
     display: block;
     text-align: center;
+    cursor: pointer;
+}
+details summary::-webkit-details-marker {
+    display: none;
 }
 .bandeau-elections summary .link {
     color: #000091;
     text-decoration: underline;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0 0.25rem;
 }
 .bandeau-elections h2 {
     text-align: center;
@@ -228,9 +233,6 @@ And all declarations are there to revert the presence of the banner.
 }
 .bandeau-elections ol > li {
     margin-bottom: 0.3rem;
-}
-.bandeau-elections .close {
-    text-align: center;
 }
 .bandeau-elections .close .cross {
     font-size: 150%;
