@@ -4,6 +4,7 @@
 
 * ouverture du 2e rappel (4e dose) aux plus de 60 ans
 * arrêt du support des navigateurs d’avant 2016 (notamment IE11)
+* ajout d’un bandeau pour les élections présidentielles
 
 ## 2022-03-25
 
