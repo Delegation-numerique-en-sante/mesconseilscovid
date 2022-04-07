@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-04-07
+
+* ouverture du 2e rappel (4e dose) aux plus de 60 ans
+* arrêt du support des navigateurs d’avant 2016 (notamment IE11)
+
 ## 2022-03-25
 
 * correction de liens cassés
