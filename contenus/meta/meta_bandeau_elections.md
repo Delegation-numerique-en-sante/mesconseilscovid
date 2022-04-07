@@ -1,3 +1,5 @@
+## Nos conseils pour voter en sécurité <span aria-hidden="true"> 🇫🇷</span>
+
 1. **Portez le masque** à l’extérieur et à l’intérieur du bureau de vote, même s’il n’est pas obligatoire, surtout :
     + en cas de **symptômes** ou de **test positif** à la Covid (de préférence un masque FFP2, plus filtrant),
     + en cas de **contact à risque**,
