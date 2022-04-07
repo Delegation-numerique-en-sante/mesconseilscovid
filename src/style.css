@@ -177,29 +177,24 @@ And all declarations are there to revert the presence of the banner.
 
 /*#region Bandeau élections */
 .bandeau-elections {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
-    right: 0;
-    z-index: 1;
     background: #ffcc9f;
-    margin: 0 auto;
     padding: 1rem;
 }
 .bandeau-elections details {
-    font-size: 80%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    max-width: 55rem;
+    margin: 0 auto;
 }
 .bandeau-elections details summary .open {
     display: block;
 }
 .bandeau-elections details summary .close {
     display: none;
-}
-.bandeau-elections details[open] summary {
-    order: 2;
 }
 .bandeau-elections details[open] summary .open {
     display: none;
@@ -225,6 +220,9 @@ And all declarations are there to revert the presence of the banner.
 }
 .bandeau-elections .close {
     text-align: center;
+}
+.bandeau-elections .close .cross {
+    font-size: 150%;
 }
 /*#endregion*/
 
