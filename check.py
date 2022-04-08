@@ -34,6 +34,7 @@ class LinkExtractor(HTMLParser):
                         "https://www.youtube.com/",
                         "https://twitter.com/",
                         "https://github.com/",
+                        "https://wa.me/",
                     )
                 ):
                     return
