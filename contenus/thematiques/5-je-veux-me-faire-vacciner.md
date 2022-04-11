@@ -514,14 +514,13 @@
 
 .. question:: Quel vaccin choisir pour ma vaccination initiale (primo-vaccination) ?
     :level: 3
-    :expires: 9 avril 2022
 
     - Chez les adultes, la Haute autorité de santé recommande de privilégier l’utilisation de **vaccins à ARN messager** (Pfizer ou Moderna) car ils sont plus efficaces que Janssen ou AstraZeneca pour réduire la transmission et les formes symptomatiques.
 
       * Si vous avez **moins de 30 ans**, privilégiez le vaccin **Pfizer** lorsque c’est possible (en l’attente de plus de données sur le risque de myocardite avec le vaccin Moderna chez les personnes plus jeunes).
       * Si vous avez **plus de 30 ans**, le vaccin **Moderna** pourra être privilégié car plusieurs études récentes semblent montrer une efficacité vaccinale légèrement supérieure.
 
-    - <span class="nouveau">nouveau</span> Un nouveau vaccin, le Nuvaxovid<sup>®</sup> du laboratoire **Novavax** est disponible en France depuis **début mars 2022**, pour les personnes qui ne peuvent pas ou ne souhaitent pas être vaccinées avec un vaccin à ARN messager.
+    - Un nouveau vaccin, le Nuvaxovid<sup>®</sup> du laboratoire **Novavax** est disponible en France pour les personnes qui ne peuvent pas ou ne souhaitent pas être vaccinées avec un vaccin à ARN messager.
 
     - Les personnes de **moins de 18 ans** sont vacciné(e)s exclusivement avec les vaccins à ARN messager et de préférence avec le vaccin Pfizer.
 
@@ -550,7 +549,6 @@
 
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
-    :expires: 9 avril 2022
 
     Le délai avant la **2<sup>e</sup> injection** dépend du type de vaccin utilisé pour la première injection.
 
@@ -558,7 +556,7 @@
         * **3 à 7 semaines** après la première, pour le vaccin **Pfizer** ;
         * **4 à 7 semaines** après la première, pour le vaccin **Moderna**.
 
-    * <span class="nouveau">nouveau</span> Si vous avez reçu une première dose de vaccin **Novavax**, il faut recevoir la 2<sup>e</sup> dose **3 semaines** après la première (avec une tolérance de **18 à 28 jours**).
+    * Si vous avez reçu une première dose de vaccin **Novavax**, il faut recevoir la 2<sup>e</sup> dose **3 semaines** après la première (avec une tolérance de **18 à 28 jours**).
 
     * Si vous avez reçu une première dose de vaccin **Janssen**, il faut recevoir une **dose supplémentaire** avec un **vaccin à ARN messager** (Pfizer ou Moderna) **4 semaines** après la première injection.
 
@@ -567,9 +565,8 @@
 
 .. question:: Y a-t-il des contre-indications à la vaccination ?
     :level: 3
-    :expires: 9 avril 2022
 
-    <span class="nouveau">nouveau</span> Pour le nouveau vaccin **Novavax**, la seule contre-indication est l’hypersensibilité à la substance active ou à l’un des excipients (👉 [consulter sa composition](https://www.mesvaccins.net/web/vaccines/667-nuvaxovid#vaccin_composition)).
+    Pour le vaccin **Novavax**, la seule contre-indication est l’hypersensibilité à la substance active ou à l’un des excipients (👉 [consulter sa composition](https://www.mesvaccins.net/web/vaccines/667-nuvaxovid#vaccin_composition)).
 
     Pour les **autres vaccins**, les contre-indications sont les suivantes :
 
