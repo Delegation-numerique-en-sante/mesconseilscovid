@@ -646,6 +646,14 @@ export default class Profil {
         )
     }
 
+    joursEcoulesDepuisDebutSymptomes() {
+        if (typeof this.symptomes_start_date === 'undefined') {
+            return undefined
+        }
+        const res = differenceEnJours(this.symptomes_start_date, new Date())
+        return res
+    }
+
     joursEcoulesDepuisDepistage() {
         if (typeof this.depistage_start_date === 'undefined') {
             return undefined

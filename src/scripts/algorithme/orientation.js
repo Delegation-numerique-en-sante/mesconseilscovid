@@ -160,6 +160,27 @@ export default class AlgorithmeOrientation {
         return this.profil.hasSymptomesActuelsReconnus() || this.profil.symptomes_passes
     }
 
+    // Éligibilité au Paxlovid :
+    // - être majeur(e)
+    // - avoir un risque élevé de forme grave
+    //     - soit immunodépression grave
+    //     - soit obésité morbide (IMC ≥ 40)
+    //     - soit trisomie 21 ou certaines maladies rares
+    //     - soit 65 ans + co-morbidités
+    // - avoir des symptômes depuis moins de 5 jours
+    get eligibleAuPaxlovid() {
+        const majeur = this.profil.age >= 18
+        const risqueDeFormeGrave =
+            this.profil.antecedent_immunodep ||
+            this.imc >= 40 ||
+            this.profil.antecedent_trisomie ||
+            this.profil.antecedent_chronique_autre ||
+            (this.sup65 && this.antecedents)
+        const symptomesDepuisMoinsDe5Jours =
+            this.profil.joursEcoulesDepuisDebutSymptomes() < 5
+        return majeur && risqueDeFormeGrave && symptomesDepuisMoinsDe5Jours
+    }
+
     get listStatuts() {
         return STATUTS
     }

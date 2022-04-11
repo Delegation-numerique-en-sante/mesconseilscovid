@@ -2,6 +2,7 @@ import { assert } from 'chai'
 import { JSDOM } from 'jsdom'
 
 import { cacherElementsConditionnels } from '../page/conseils'
+import { joursAvant } from '../utils'
 import Profil from '../profil'
 
 describe('Conseils personnels', function () {
@@ -79,5 +80,44 @@ describe('Conseils personnels', function () {
         })
         cacherElementsConditionnels(element, profil)
         assert.isFalse(element.querySelector('#foyer').hidden)
+    })
+
+    it('Je suis éligible au Paxlovid', function () {
+        let dom = new JSDOM(`<!DOCTYPE html>
+            <section id="conseils">
+                <div id="conseils-personnels" class="conseils">
+                    <ol>
+                        <li id="paxlovid" class="seulement-si-paxlovid">Prescription Paxlovid</li>
+                    </ol>
+                </div>
+            </section>
+        `)
+        let element = dom.window.document.querySelector('#conseils')
+        let profil = new Profil('mes_infos', {
+            age: 65,
+            antecedent_diabete: true,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        cacherElementsConditionnels(element, profil)
+        assert.isFalse(element.querySelector('#paxlovid').hidden)
+    })
+    it('Je ne suis pas éligible au Paxlovid', function () {
+        let dom = new JSDOM(`<!DOCTYPE html>
+            <section id="conseils">
+                <div id="conseils-personnels" class="conseils">
+                    <ol>
+                        <li id="paxlovid" class="seulement-si-paxlovid">Prescription Paxlovid</li>
+                    </ol>
+                </div>
+            </section>
+        `)
+        let element = dom.window.document.querySelector('#conseils')
+        let profil = new Profil('mes_infos', {
+            age: 65,
+            antecedent_diabete: false,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        cacherElementsConditionnels(element, profil)
+        assert.isTrue(element.querySelector('#paxlovid').hidden)
     })
 })

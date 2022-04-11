@@ -888,3 +888,79 @@ describe('Blocs d’informations additionnels', function () {
         })
     })
 })
+
+describe('Paxlovid', function () {
+    it('Éligible si immunodéprimé', function () {
+        var profil = new Profil('mes_infos', {
+            age: 18,
+            antecedent_immunodep: true,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        assert.isTrue(algoOrientation.eligibleAuPaxlovid)
+    })
+    it('Éligible si obésité morbide', function () {
+        var profil = new Profil('mes_infos', {
+            age: 18,
+            taille: 160,
+            poids: 110,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        assert.isTrue(algoOrientation.eligibleAuPaxlovid)
+    })
+    it('Éligible si trisomie', function () {
+        var profil = new Profil('mes_infos', {
+            age: 18,
+            antecedent_trisomie: true,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        assert.isTrue(algoOrientation.eligibleAuPaxlovid)
+    })
+    it('Éligible si autre maladie chronique', function () {
+        var profil = new Profil('mes_infos', {
+            age: 18,
+            antecedent_chronique_autre: true,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        assert.isTrue(algoOrientation.eligibleAuPaxlovid)
+    })
+    it('Éligible si plus de 65 ans et comorbidité', function () {
+        var profil = new Profil('mes_infos', {
+            age: 65,
+            antecedent_diabete: true,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        assert.isTrue(algoOrientation.eligibleAuPaxlovid)
+    })
+    it('Pas éligible si moins de 65 ans et comorbidité', function () {
+        var profil = new Profil('mes_infos', {
+            age: 64,
+            antecedent_diabete: true,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        assert.isFalse(algoOrientation.eligibleAuPaxlovid)
+    })
+    it('Pas éligible si mineur', function () {
+        var profil = new Profil('mes_infos', {
+            age: 17,
+            antecedent_immunodep: true,
+        })
+        profil.symptomes_start_date = joursAvant(4)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        assert.isFalse(algoOrientation.eligibleAuPaxlovid)
+    })
+    it('Pas éligible si symptômes depuis plus de 5 jours', function () {
+        var profil = new Profil('mes_infos', {
+            age: 18,
+            antecedent_immunodep: true,
+        })
+        profil.symptomes_start_date = joursAvant(5)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        assert.isFalse(algoOrientation.eligibleAuPaxlovid)
+    })
+})
