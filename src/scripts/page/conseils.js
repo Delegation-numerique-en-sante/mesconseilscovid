@@ -130,6 +130,9 @@ export function cacherElementsConditionnels(element, profil) {
         '.seulement-si-non-vaccine',
         !algoVaccination.isCompletementVaccine()
     )
+
+    // Seulement si éligible à ce traitement.
+    showOnlyIf(element, '.seulement-si-paxlovid', algoOrientation.eligibleAuPaxlovid)
 }
 
 function showRelevantSuiviBlocks(element, algoSuivi) {
