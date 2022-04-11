@@ -246,7 +246,7 @@
 .. question:: Est-ce que je dois porter le masque au collège ou au lycée?
     :level: 3
 
-    <span class="nouveau">nouveau</span> Le masque n’est **plus obligatoire** au collège et au lycée mais il est **fortement conseillé** de le porter :
+    Le masque n’est **plus obligatoire** au collège et au lycée mais il est **fortement conseillé** de le porter :
     * si tu es **cas contact** ;
     * si tu as des **symptômes** (même un simple nez qui coule) ;
     * et pendant les **7 jours** qui suivent ton retour en classe, **si tu avais la Covid** dans les jours précédents et que tu t’étais isolé(e).

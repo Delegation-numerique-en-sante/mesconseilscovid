@@ -16,11 +16,10 @@
 
 .. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus sur mon lieu de travail ?
     :level: 3
-    :expires: 14 avril 2022
 
     Le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l’entourent dans la mesure de ses possibilités (formations, moyens…).
 
-    <span class="nouveau">nouveau</span> Depuis le **14 mars 2022**, le **port du masque** n’est **plus obligatoire** en entreprise.
+    Le **port du masque** n’est **plus obligatoire** en entreprise.
 
     Mais, même vacciné(e), nous vous recommandons de rester prudent(e) :
     * maintenez la **distanciation physique** ;
@@ -89,7 +88,6 @@
 
 .. question:: Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?
     :level: 3
-    :expires: 14 avril 2022
 
     L’**employeur** doit proposer des mesures pour **limiter** les risques de **propagation** du virus dans son entreprise, et les **salariés** doivent **agir** à leur niveau, pour se **protéger** et protéger ceux qui les entourent.
 
@@ -115,7 +113,7 @@
         * mettre à disposition du gel hydroalcoolique et des masques ;
         * nettoyer et **désinfecter** régulièrement les espaces partagés.
 
-    <span class="nouveau">nouveau</span> Depuis le **14 mars 2022**, le **port du masque** n’est **plus obligatoire** en entreprise, mais il reste **fortement recommandé** dans les situations suivantes :
+    Le **port du masque** n’est **plus obligatoire** en entreprise, mais il reste **fortement recommandé** dans les situations suivantes :
     * si vous avez des **symptômes** ;
     * si vous êtes **cas contact** ;
     * pendant les **7 jours** après la fin votre période d’**isolement** si vous avez été testé **positif**.

@@ -122,9 +122,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: Est-ce que mon enfant doit porter le masque ?
     :level: 3
-    :expires: 14 avril 2022
 
-    <span class="nouveau">nouveau</span>À partir du **lundi 14 mars 2022**, le port du masque n’est **plus obligatoire** dans les écoles, les collèges et les lycées.
+    Le port du masque n’est **plus obligatoire** dans les écoles, les collèges et les lycées.
 
     Si votre enfant est **cas contact**, le port du masque est fortement recommandé pendant 7 jours.
 

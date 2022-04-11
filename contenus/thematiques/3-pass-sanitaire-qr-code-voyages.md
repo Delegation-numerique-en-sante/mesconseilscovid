@@ -15,9 +15,8 @@
 
 .. question:: Dans quels lieux le passe sanitaire est-il demandé ?
     :level: 3
-    :expires: 14 avril 2022
 
-    Depuis le **lundi 14 mars 2022**, le passe sanitaire est seulement demandé dans les **établissements de santé**, les **maisons de retraites**, les établissements accueillant des personnes en situation de handicap.
+    Un passe sanitaire est demandé pour entrer dans les **établissements de santé**, les **maisons de retraites**, les établissements accueillant des personnes en situation de handicap.
 
 
 .. question:: Jusqu’à quand l’usage du passe sanitaire est-il prévu ?
@@ -169,9 +168,8 @@
 
 .. question:: Le pass sanitaire est-il nécessaire pour voyage en France (avion, car, train…) ?
     :level: 3
-    :expires: 14 avril 2022
 
-    Depuis le **14 mars 2022**, le passe sanitaire n’est **plus obligatoire** pour accéder aux moyens de transport **longue distance** en France : avions, trains (TGV, Intercités, Ouigo), et cars inter-régionaux.
+    Le passe sanitaire n’est **plus obligatoire** pour accéder aux moyens de transport **longue distance** en France : avions, trains (TGV, Intercités, Ouigo), et cars inter-régionaux.
 
 
 ## Les voyages à l’étranger
