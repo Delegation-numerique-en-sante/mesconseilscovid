@@ -1,3 +1,5 @@
+import tippy from 'tippy.js'
+
 import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
@@ -16,6 +18,7 @@ export function pageThematique(app) {
     partagePageEnCours()
     feedbackPageEnCours(app)
 
+    initialiseLesDefinitions()
     initialiseLesFormulaires()
 
     navigueVersUneThematique(
@@ -89,6 +92,13 @@ function scrolleAuSummary() {
             }, 100)
             creeUnLienPermanentDansLHistorique(detailsElement)
         })
+    })
+}
+
+function initialiseLesDefinitions() {
+    tippy('[data-definition]', {
+        content: (reference) => reference.dataset.definition,
+        trigger: 'click',
     })
 }
 

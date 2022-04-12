@@ -34,11 +34,11 @@
 
     La date de la 3<sup>e</sup> dose dépend de votre situation.
 
-    - Vous avez **eu la Covid** au moins 3 mois après votre primo-vaccination : vous n’avez **pas besoin** de recevoir de dose de rappel pour prolonger votre passe sanitaire.
+    - Vous avez **eu la Covid** au moins 3 mois après votre <span data-definition="On appelle primo-vaccination la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.">primo-vaccination</span> : vous n’avez **pas besoin** de recevoir de dose de rappel pour prolonger votre passe sanitaire.
 
-    - Vous avez **plus de 18 ans et 1 mois** : vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre primo-vaccination pour prolonger votre passe sanitaire.
+    - Vous avez **plus de 18 ans et 1 mois** : vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre <span data-definition="On appelle primo-vaccination la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.">primo-vaccination</span> pour prolonger votre passe sanitaire.
 
-    - Vous avez entre **12 et 17 ans**, vous pouvez faire un rappel dès **6 mois** après votre primo-vaccination. Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.
+    - Vous avez entre **12 et 17 ans**, vous pouvez faire un rappel dès **6 mois** après votre <span data-definition="On appelle primo-vaccination la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.">primo-vaccination</span>. Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.
 
     <div class="voir-aussi">
 
@@ -372,8 +372,8 @@
 
     **Non**. Si vous êtes [cas contact](cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)** en vous faisant tester.
 
-    * Si votre primo-vaccination date d’il y a moins de 4 mois : soyez prudent(e) pendant 7 jours, et faites un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) 2 jours après avoir appris que vous étiez cas contact.
-    * Si votre primo-vaccination date d’il y a plus de 4 mois : faites un test antigénique ou PCR **7 jours après** votre dernier contact avec la personne positive.
+    * Si votre <span data-definition="On appelle primo-vaccination la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.">primo-vaccination</span> date d’il y a moins de 4 mois : soyez prudent(e) pendant 7 jours, et faites un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) 2 jours après avoir appris que vous étiez cas contact.
+    * Si votre <span data-definition="On appelle primo-vaccination la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.">primo-vaccination</span> date d’il y a plus de 4 mois : faites un test antigénique ou PCR **7 jours après** votre dernier contact avec la personne positive.
 
     À l’issue de cette **période de vigilance**, et si votre test est **négatif**, alors vous pourrez vous faire vacciner.
 
@@ -528,7 +528,7 @@
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir ?
     :level: 3
 
-    - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe sanitaire une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
+    - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe sanitaire une fois que vous aurez finalisé votre **<span data-definition="On appelle primo-vaccination la première série d’injections et/ou d’infection à la Covid. Elle précède le rappel vaccinal.">primo-vaccination</span>** en recevant **1 ou 2** injections de vaccin, selon votre situation.
 
     <div class="tableaux-vaccination-complete">
       {{ tableau_vaccination('vaccination_initiale') }}

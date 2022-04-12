@@ -1,4 +1,5 @@
 @import '../node_modules/pikaday/css/pikaday.css';
+@import '../node_modules/tippy.js/dist/tippy.css';
 
 .pika-mcc-theme .is-today .pika-button {
     color: #000091;
@@ -2025,6 +2026,40 @@ a.no-type::after {
 [data-thematique-name='conseils-pour-les-enfants'] #masque-obligatoire-refaire {
     margin-bottom: 3rem;
 }
+
+/*#region Définitions */
+[data-definition] {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    text-decoration: #d5dbef underline dotted;
+    cursor: pointer;
+
+    @media screen and (-ms-high-contrast: active) {
+        border: 2px solid currentcolor;
+    }
+}
+[data-definition]::after {
+    content: '?';
+    display: inline-block;
+    margin-left: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: #d5dbef;
+    border-radius: 50%;
+    line-height: 14px;
+    vertical-align: super;
+    font-size: 75%;
+    text-align: center;
+    border-bottom: none;
+}
+[data-definition].open {
+    text-decoration: none;
+    background-color: #d5dbef77;
+}
+/*#endregion*/
 
 @media print {
     a,
