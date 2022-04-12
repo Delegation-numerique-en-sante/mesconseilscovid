@@ -1924,6 +1924,14 @@ a.no-type::after {
     margin-bottom: 1rem;
     font-size: 125%;
 }
+.thematique img {
+    max-width: 100%;
+}
+.thematique figcaption {
+    text-align: center;
+    font-size: 8px;
+    font-style: italic;
+}
 .thematique .illustration {
     max-width: 8rem;
 }
