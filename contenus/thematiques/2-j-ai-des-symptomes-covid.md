@@ -71,6 +71,7 @@
 
     </div>
 
+
 .. question:: Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?
 
     **Oui**. Même quand on est vacciné(e), **il reste un risque d’attraper la Covid** si on est exposé au virus (même si la maladie sera le plus souvent moins grave), et de le transmettre par la suite (même si votre contagiosité sera elle aussi diminuée).
@@ -85,20 +86,21 @@
     - [Je suis cas contact d’une personne de mon foyer, que faire ?](je-vis-avec-personne-covid-positive.html)
 
     </div>
-    
-.. question:: Quel traitement contre la Covid ?
-    
-    Depuis février 2022, le Paxlovid, un médicament antiviral (c'est-à-dire qui freine la multiplication du virus dans le corps) est disponible sur **ordonnance**. 
+
+
+.. question:: Quel traitement contre la Covid ?
+
+    Depuis février 2022, le **Paxlovid**, un médicament antiviral (c’est-à-dire qui freine la multiplication du virus dans le corps) est disponible **sur ordonnance**.
 
     Il peut-être prescrit aux **adultes positifs** qui sont **à risque de forme grave** de Covid, qui ont des **symptômes** et qui ne sont **pas sous oxygène** (oxygénothérapie).
 
-    Le Paxlovid est efficace s'il est pris dans les **5 jours** qui suivent l'apparition des symptômes. Il agit en freinant leur évolution et ainsi **empêche l'aggravation de la maladie**. Les études montrent qu'il **réduit de 85,2%** les risques d'hospitalisation lorsqu'il est pris au début de la maladie.
+    Le Paxlovid est efficace s’il est pris dans les **5 jours** qui suivent l’apparition des symptômes. Il agit en freinant leur évolution et ainsi **empêche l’aggravation de la maladie**. Les études montrent qu’il **réduit de 85,2%** les risques d’hospitalisation lorsqu’il est pris au début de la maladie.
 
-    Les personnes concernées par ce traitement sont :
-    * tous les adultes **immunodéprimés** ou qui ont une **pathologie à très haut risque** de forme grave (en particulier cancers en cours de traitement, polypathologies, trisomie 21 ou certaines maladies rares).
-    * les personnes de **plus de 65 ans** qui ont des **facteurs de risques** de développer des formes graves (diabète, obésité, insuffisance rénale chronique, insuffisance cardiaque, hypertension artérielle, insuffisance respiratoire...), en particulier lorsqu'elles ne sont pas ou pas complètement vaccinées.
-    
-    Certains médicaments ne doivent pas être pris avec le Paxlovid. Consulter [la **liste des médicaments incompatibles**.](https://www.has-sante.fr/jcms/p_3310993/fr/traitement-par-antiviral-des-patients-a-risque-de-forme-grave-de-la-covid-19)
+    Les personnes concernées par ce traitement sont :
+    * tous les adultes **immunodéprimés** ou qui ont une **pathologie à très haut risque** de forme grave (en particulier cancers en cours de traitement, polypathologies, trisomie 21 ou certaines maladies rares) ;
+    * les personnes de **plus de 65 ans** qui ont des **facteurs de risques** de développer des formes graves (diabète, obésité, insuffisance rénale chronique, insuffisance cardiaque, hypertension artérielle, insuffisance respiratoire…), en particulier lorsqu’elles ne sont pas ou pas complètement vaccinées.
+
+    Certains médicaments ne doivent pas être pris avec le Paxlovid. Consulter la [liste des médicaments incompatibles](https://www.has-sante.fr/jcms/p_3310993/fr/traitement-par-antiviral-des-patients-a-risque-de-forme-grave-de-la-covid-19).
 
 </div>
 
