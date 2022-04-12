@@ -76,6 +76,7 @@ const CACHE_FILES = [
     'illustrations/pediatriegeneral.svg',
     'illustrations/pediatriemedical.svg',
     'illustrations/sante.svg',
+    'illustrations/sars-cov-2-proteine-S.png',
     'illustrations/situation.svg',
     'illustrations/symptomesactuels.svg',
     'illustrations/symptomespasses.svg',
