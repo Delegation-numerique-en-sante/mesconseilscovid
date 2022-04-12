@@ -28,6 +28,12 @@
 
     Le deuxième rappel n’est pas ouvert aux autres catégories de population à l’heure actuelle.
 
+    <div class="voir-aussi">
+
+    - [J’ai eu la Covid après ma 3<sup>e</sup> dose, dois-je recevoir un 2<sup>e</sup> rappel ?](#j-ai-eu-la-covid-apres-ma-3-e-dose-dois-je-recevoir-un-2-e-rappel)
+
+    </div>
+
 
 .. question:: Quand faire la 3<sup>e</sup> dose (1<sup>er</sup> rappel) ?
     :level: 3
@@ -45,6 +51,7 @@
     - [J’ai eu la Covid après ma primo-vaccination, comment prolonger mon passe sanitaire ?](pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-sanitaire)
 
     </div>
+
 
 .. question:: J’ai été vacciné(e) avec le vaccin Janssen. Comment se passe mon rappel ?
     :level: 3
@@ -354,6 +361,21 @@
               </tr>
           </tbody>
         </table>
+
+
+.. question:: J’ai eu la Covid après ma 3<sup>e</sup> dose, dois-je recevoir un 2<sup>e</sup> rappel ?
+    :level: 3
+
+    * Si vous avez eu la Covid **plus de 3 mois** après le premier rappel : **non**, un deuxième rappel n’est **pas nécessaire**.
+    * Si vous avez eu la Covid **moins de 3 mois** après le premier rappel : **oui**, un deuxième rappel est **nécessaire**, mais il faut attendre :
+      * **6 mois après l’infection** si vous avez entre 60 et 79 ans,
+      * **3 mois après l’infection** si vous avez 80 ans ou plus.
+
+    <div class="voir-aussi">
+
+    - [Quand faire la 4<sup>e</sup> dose (2<sup>e</sup> rappel) ?](#quand-faire-la-4-e-dose-2-e-rappel)
+
+    </div>
 
 
 .. question:: J’ai eu la Covid avant ma vaccination initiale. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
