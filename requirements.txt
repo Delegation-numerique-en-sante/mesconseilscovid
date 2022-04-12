@@ -108,7 +108,7 @@ tomli==2.0.1
     # via pytest
 tornado==6.1
     # via livereload
-tox==3.24.5
+tox==3.25.0
     # via -r requirements.in
 tzdata==2021.5
     # via pytz-deprecation-shim
