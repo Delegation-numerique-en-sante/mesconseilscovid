@@ -116,29 +116,9 @@ class MarkdownInlineContent(MarkdownContent):
 def render_markdown_file(file_path, markdown_parser):
     source = file_path.read_text()
     templated_source = Template(source).render(
-        formulaire=render_formulaire, tableau_vaccination=render_tableau_vaccination
+        tableau_vaccination=render_tableau_vaccination
     )
     return MarkdownContent(templated_source, markdown_parser)
-
-
-def render_formulaire(nom_formulaire, prefixe=""):
-    from .thematiques import THEMATIQUES_DIR
-
-    path = THEMATIQUES_DIR / "formulaires" / f"{nom_formulaire}.md"
-    with path.open() as f:
-        template = Template(f.read())
-
-    if prefixe:
-        prefixe = nom_formulaire + "-" + prefixe
-    else:
-        prefixe = nom_formulaire
-
-    markdown = (
-        f'<div class="formulaire" data-nom="{nom_formulaire}" data-prefixe="{prefixe}">\n\n'
-        + template.render(prefixe=prefixe)
-        + "\n\n</div>"
-    )
-    return indent(markdown, "    ").lstrip()
 
 
 def render_tableau_vaccination(nom_tableau):

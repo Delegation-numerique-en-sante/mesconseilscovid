@@ -58,6 +58,7 @@ const CACHE_FILES = [
     'icone_video.svg',
     'icone_fiche.svg',
     'icone_infographie.svg',
+    'infographie-tests-de-depistage.png',
     'timeline-arrow.svg',
     'illustrations/activitepro.svg',
     'illustrations/contact_medecin.svg',

@@ -1,7 +1,6 @@
 import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
-import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
@@ -15,8 +14,6 @@ export function pageThematique(app) {
     initDetailsSummary()
     partagePageEnCours()
     feedbackPageEnCours(app)
-
-    initialiseLesFormulaires()
 
     navigueVersUneThematique(
         app,
@@ -90,19 +87,6 @@ function scrolleAuSummary() {
             creeUnLienPermanentDansLHistorique(detailsElement)
         })
     })
-}
-
-function initialiseLesFormulaires() {
-    Array.from(document.querySelectorAll('.formulaire')).forEach((form) => {
-        const init = initFunc(form.dataset.nom)
-        init(form.dataset.prefixe)
-    })
-}
-
-function initFunc(nom) {
-    if (nom == 'tests-de-depistage') {
-        return dynamiseLeChoixDuTest
-    }
 }
 
 function creeUnLienPermanentDansLHistorique(detailsElement) {
