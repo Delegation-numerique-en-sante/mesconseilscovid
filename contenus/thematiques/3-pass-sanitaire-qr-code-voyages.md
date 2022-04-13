@@ -380,7 +380,7 @@
 
     <div class="conseil conseil-jaune">
 
-    Attention, les tests de dépistage sont **payants** (43,89 € pour les tests RT-PCR et de 22 à 45 € pour un test antigénique). Si vous êtes assuré social ou européen, ils peuvent êtres pris en charge sous [certaines conditions](tests-de-depistage.html#dans-quels-cas-les-tests-de-depistage-sont-ils-gratuits).
+    Attention, les tests de dépistage sont **payants** (43,89 € pour les tests RT-PCR et de 22 à 45 € pour un test antigénique). Si vous êtes assuré social ou européen, ils peuvent êtres pris en charge sous [certaines conditions](tests-de-depistage.html#dans-quel-cas-le-test-est-il-gratuit).
 
     </div>
 

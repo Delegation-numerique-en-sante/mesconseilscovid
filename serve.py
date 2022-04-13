@@ -39,7 +39,6 @@ PATHS_TO_WATCH = {
     "contenus/statuts/*.md": ["index"],
     "contenus/suivi/*.md": ["index"],
     "contenus/thematiques/*.md": ["thematiques", "index"],
-    "contenus/thematiques/formulaires/*.md": ["thematiques"],
     "templates/index.html": ["index"],
     "templates/thematique.html": ["thematiques"],
 }
