@@ -13,21 +13,44 @@
 
 .. question:: Quel test faire ?
     :level: 3
-    :open: true
 
-    <img src="infographie-tests-de-depistage.png" alt="Infographie : quel test selon ma situation ?">
+    <figure role="group">
+        <img src="infographie-tests-de-depistage.png" alt="Quel test selon ma situation ?">
+        <figcaption>
 
     <a href="https://www.gouvernement.fr/sites/default/files/220318_affichette_tests.pdf">Ouvrir l’infographie</a>
+
+    ##### Je suis complètement vacciné (conformément au pass) ou j’ai moins de 12 ans
+
+    - **RT-PCR**
+        - Pour confirmer un test antigénique ou un autotest positif
+    - **RT-PCR ou Test antigénique**
+        - Si j’ai des symptômes.
+        - Quand je suis cas contact à J+2 après avoir appris que j’ai été en contact avec une personne positive.
+        - Pour réduire mon isolement de 7 à 5 jours, si je suis positif et que je n’ai plus de symptômes depuis 48 heures.
+    - **Autotest**
+        - Quand je suis cas contact à J+2 après avoir appris que j’ai été en contact avec une personne positive.
+        - Quand je n’ai pas de symptômes et que je souhaite me réassurer.
+
+    ##### Je ne suis pas vacciné ou pas complètement (conformément au pass)
+
+    - **RT-PCR**
+        - Pour confirmer un test antigénique ou un autotest positif
+    - **RT-PCR ou Test antigénique**
+        - Si j’ai des symptômes.
+        - Quand je suis cas contact à J+2 après avoir appris que j’ai été en contact avec une personne positive.
+        - Pour réduire mon isolement de 10 à 7 jours, si je suis positif et que je n’ai plus de symptômes depuis 48 heures.
+    - **Autotest**
+        - Quand je suis cas contact à J+2 après avoir appris que j’ai été en contact avec une personne positive.
+
+        </figcaption>
+    </figure>
 
 
 .. question:: Où faire un test ?
     :level: 3
 
-    <div class="conseil">
-
     [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) au plus proche de vous.
-
-    </div>
 
 
 .. question:: Dans quel cas le test est-il gratuit ?

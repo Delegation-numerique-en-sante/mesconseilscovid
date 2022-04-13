@@ -275,7 +275,7 @@
 
     <figure>
         <img src="illustrations/sars-cov-2-proteine-S.png" alt="Les protéines S du virus de la Covid (SARS-CoV-2)">
-        <figcaption>Crédits : adapté d’une illustration de Davian Ho (<a href="https://innovativegenomics.org/free-covid-19-illustrations/">Innovative Genomics Institute</a>).</figcaption>
+        <figcaption class="credits">Crédits : adapté d’une illustration de Davian Ho (<a href="https://innovativegenomics.org/free-covid-19-illustrations/">Innovative Genomics Institute</a>).</figcaption>
     </figure>
 
     Il y a **3 types de vaccins** disponibles actuellement. Ils ont tous le même objectif, qui est de présenter des morceaux inoffensifs du virus (les « protéines S »), à notre **système immunitaire**, pour qu’il apprenne à **reconnaître** et à **combattre** le virus.
