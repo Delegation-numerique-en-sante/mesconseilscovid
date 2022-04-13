@@ -9,7 +9,7 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-## Se faire tester
+## Se faire tester : infos pratiques
 
 .. question:: Quel test faire ?
     :level: 3
