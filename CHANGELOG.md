@@ -1,5 +1,11 @@
 # Changelog
 
+## 2022-04-13
+
+* ajoute des informations sur le Paxlovid (question + conseils personnalisés)
+* ajoute une question sur l’infection après le 1er rappel
+* page jeunes : reformule l’explication des vaccins et ajoute une illustration
+
 ## 2022-04-07
 
 * ouverture du 2e rappel (4e dose) aux plus de 60 ans
