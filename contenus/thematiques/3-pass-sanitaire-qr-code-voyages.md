@@ -169,7 +169,21 @@
 .. question:: Le pass sanitaire est-il nécessaire pour voyager en France (avion, car, train…) ?
     :level: 3
 
-    Le passe sanitaire n’est **plus obligatoire** pour accéder aux moyens de transport **longue distance** en France métropolitaine : avions, trains (TGV, Intercités, Ouigo), et cars inter-régionaux.
+    Le passe sanitaire n’est **plus obligatoire** pour accéder aux moyens de transport **longue distance** en France : avions (lignes intérieures), trains (TGV, Intercités, Ouigo), et cars inter-régionaux.
+
+
+.. question:: Quelles sont les règles pour voyager entre la métropole et les territoires d’Outre-mer ?
+    :level: 3
+
+    * Pour prendre l’avion **depuis la métropole** vers un territoire d’Outre-mer :
+        - les passagers de **12 ans** et plus, **vaccinés ou non**, doivent présenter le **résultat négatif** d’un **test antigénique** datant de moins de 48 h, ou d’un **test PCR** datant de moins de 72 h ;
+        - les passagers qui ne sont **pas complètement vaccinés** doivent justifier d’un « **motif impérieux** » personnel ou familial, d’un motif de santé urgent, ou d’un motif professionnel ne pouvant être différé.
+
+    * Pour prendre l’avion **depuis un territoire d’Outre-mer** vers la métropole :
+        - les passagers de **12 ans** et plus n’étant **pas complètement vaccinés** doivent présenter le **résultat négatif** d’un test antigénique datant de moins de 48 h, ou d’un test PCR datant de moins de 72 h ;
+        - les passagers qui ne sont **pas complètement vaccinés** doivent justifier d’un « **motif impérieux** » personnel ou familial, d’un motif de santé urgent, ou d’un motif professionnel ne pouvant être différé.
+
+    Des **restrictions locales** peuvent être décidées en fonction de la situation sanitaire : consultez le site web de la **préfecture** concernée ou le site [outre-mer.gouv.fr](https://www.outre-mer.gouv.fr/informations-coronavirus) avant votre voyage.
 
 
 ## Les voyages à l’étranger
