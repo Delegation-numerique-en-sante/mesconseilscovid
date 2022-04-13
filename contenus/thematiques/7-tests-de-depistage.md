@@ -72,10 +72,10 @@
     </div>
 
 
-.. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
+.. question:: Je ne veux pas faire de test nasopharyngé (prélèvement par le nez), y-a-t-il une alternative ?
     :level: 3
 
-    Le test **PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
+    Oui, le test **PCR salivaire** est indiqué dans les cas où le prélèvement par le nez est compliqué ou impossible : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
 
 
 ## Comprendre les différents types de test
