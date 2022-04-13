@@ -1927,7 +1927,7 @@ a.no-type::after {
 .thematique img {
     max-width: 100%;
 }
-.thematique figcaption {
+.thematique .credits {
     text-align: center;
     font-size: 8px;
     font-style: italic;
