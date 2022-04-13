@@ -166,10 +166,10 @@
     - ou une **prescription** du médecin chez qui vous avez rendez-vous.
 
 
-.. question:: Le pass sanitaire est-il nécessaire pour voyage en France (avion, car, train…) ?
+.. question:: Le pass sanitaire est-il nécessaire pour voyager en France (avion, car, train…) ?
     :level: 3
 
-    Le passe sanitaire n’est **plus obligatoire** pour accéder aux moyens de transport **longue distance** en France : avions, trains (TGV, Intercités, Ouigo), et cars inter-régionaux.
+    Le passe sanitaire n’est **plus obligatoire** pour accéder aux moyens de transport **longue distance** en France métropolitaine : avions, trains (TGV, Intercités, Ouigo), et cars inter-régionaux.
 
 
 ## Les voyages à l’étranger
