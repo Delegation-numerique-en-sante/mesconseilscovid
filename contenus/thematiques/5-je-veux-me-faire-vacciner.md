@@ -30,7 +30,7 @@
 
     <div class="voir-aussi">
 
-    - [J’ai eu la Covid après ma 3<sup>e</sup> dose, dois-je recevoir un 2<sup>e</sup> rappel ?](#j-ai-eu-la-covid-apres-ma-3-e-dose-dois-je-recevoir-un-2-e-rappel)
+    - [J’ai eu la Covid après ma 3<sup>e</sup> dose, dois-je faire un 2<sup>e</sup> rappel ?](#j-ai-eu-la-covid-apres-ma-3-e-dose-dois-je-faire-un-2-e-rappel)
 
     </div>
 
