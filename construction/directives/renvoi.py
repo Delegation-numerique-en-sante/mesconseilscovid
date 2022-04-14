@@ -34,7 +34,7 @@ class RenvoiDirective(Directive):
 
     @staticmethod
     def render_html(text, nom_page, titre_page, id_question, titre_question, level):
-        return f"""<details id="{id_question}">
+        return f"""<details id="{id_question}" class="bloc-a-deplier">
     {render_html_summary('', typographie(titre_question, html=True), level)}
     <p>
         Voir la réponse sur notre page
