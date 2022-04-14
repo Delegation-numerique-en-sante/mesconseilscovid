@@ -17,8 +17,9 @@
     <figure role="group">
         <img src="infographie-tests-de-depistage.png" alt="Quel test selon ma situation ?">
         <figcaption>
-
-    <a href="https://solidarites-sante.gouv.fr/IMG/pdf/infographie-test.pdf">Ouvrir l’infographie</a>
+            <p><a href="https://solidarites-sante.gouv.fr/IMG/pdf/infographie-test.pdf">Ouvrir l’infographie</a></p>
+            <details>
+              <summary>Afficher la version texte</summary>
 
     ##### Je suis complètement vacciné (conformément au pass) ou j’ai moins de 12 ans
 
@@ -43,6 +44,7 @@
     - **Autotest**
         - Quand je suis cas contact à J+2 après avoir appris que j’ai été en contact avec une personne positive.
 
+            </details>
         </figcaption>
     </figure>
 
