@@ -19,7 +19,7 @@
 
 ## Qui est éligible au rappel vaccinal ?
 
-.. injection:: /je-veux-me-faire-vacciner.html#j-ai-eu-la-covid-avant-ma-vaccination-initiale-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
+.. injection:: /je-veux-me-faire-vacciner.html#j-ai-eu-la-covid-avant-ma-vaccination-initiale-dois-je-faire-un-rappel-dit-3-e-dose
 
 
 ## Organiser mon rendez-vous de vaccination
@@ -28,7 +28,7 @@
 
 .. injection:: je-veux-me-faire-vacciner.html#comment-prendre-rendez-vous-pour-me-faire-vacciner
 
-.. injection:: je-veux-me-faire-vacciner.html#j-ai-des-difficultes-a-me-deplacer-puis-je-me-faire-vacciner-a-domicile
+.. injection:: je-veux-me-faire-vacciner.html#j-ai-des-difficultes-a-me-deplacer-comment-me-faire-vacciner-a-domicile
 
 
 ## Prolonger mon passe sanitaire
