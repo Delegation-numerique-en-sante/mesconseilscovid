@@ -216,7 +216,7 @@ And all declarations are there to revert the presence of the banner.
     text-align: center;
     cursor: pointer;
 }
-details summary::-webkit-details-marker {
+.bandeau-elections summary::-webkit-details-marker {
     display: none;
 }
 .bandeau-elections summary .link {
@@ -412,7 +412,7 @@ legend h1 {
     margin: 1rem;
 }
 .page-thematique :target,
-.page-thematique .conseils :target summary {
+.page-thematique .conseils :target > summary {
     animation: target-fade 2s 1;
 }
 @keyframes target-fade {
@@ -445,17 +445,17 @@ legend h1 {
     min-height: auto;
     border-radius: 0.66rem;
 }
-.page-thematique .conseils details {
+.page-thematique .conseils details.bloc-a-deplier {
     position: relative;
     margin-top: 0;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 5px;
 }
-.page-thematique .conseils details[open] {
+.page-thematique .conseils details.bloc-a-deplier[open] {
     padding-bottom: 1rem;
 }
-.page-thematique .conseils details > summary {
+.page-thematique .conseils details.bloc-a-deplier > summary {
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -463,29 +463,29 @@ legend h1 {
     background: white;
     z-index: 1; /* Ensure it remains on top of other elements. */
 }
-.page-thematique .conseils details .explications {
+.page-thematique .conseils details.bloc-a-deplier .explications {
     margin: 0.75rem;
     padding: 0.5rem 1rem;
     background: #eff3ff;
     border-left: 4px solid #a5baff;
 }
-.page-thematique .conseils details .lire-la-suite {
+.page-thematique .conseils details.bloc-a-deplier .lire-la-suite {
     margin: 0 0.75rem 0.75rem 0.75rem;
     text-align: right;
 }
-.page-thematique .conseils details .lire-la-suite .button {
+.page-thematique .conseils details.bloc-a-deplier .lire-la-suite .button {
     display: inline-block;
     margin: 0;
 }
-.page-thematique .conseils details[open] .explications,
-.page-thematique .conseils details[open] .lire-la-suite {
+.page-thematique .conseils details.bloc-a-deplier[open] .explications,
+.page-thematique .conseils details.bloc-a-deplier[open] .lire-la-suite {
     display: none;
 }
 .page-thematique [itemprop='url'] {
     text-decoration: none;
     color: #25252b;
 }
-.page-thematique details [itemprop='mainEntity'] {
+.page-thematique details.bloc-a-deplier [itemprop='mainEntity'] {
     scroll-margin-top: 6rem;
 }
 .block .thematiques .cards {
@@ -908,27 +908,27 @@ footer .legals {
 .conseils {
     margin-bottom: 3rem;
 }
-.conseils summary h2,
-.conseils summary h3,
+.conseils details.bloc-a-deplier > summary h2,
+.conseils details.bloc-a-deplier > summary h3,
 #historique h3 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     flex-grow: 1;
 }
-.conseils summary h2,
-.conseils summary h3,
+.conseils details.bloc-a-deplier > summary h2,
+.conseils details.bloc-a-deplier > summary h3,
 #historique h3 {
     color: #000091;
     font-size: 175%;
     border-radius: 0.35rem;
     margin: 1rem 0;
 }
-.conseils summary {
+.conseils details.bloc-a-deplier > summary {
     display: flex;
 }
-.conseils summary h2,
-.conseils summary h3 {
+.conseils details.bloc-a-deplier > summary h2,
+.conseils details.bloc-a-deplier > summary h3 {
     padding: 0.5rem 1rem;
     margin: 1.5rem 0;
 }
@@ -1315,12 +1315,12 @@ a.button-feedback-social-whatsapp {
     padding: 12px 24px 12px 60px;
 }
 
-.thematique #conseils-block details form.question-feedback,
-.thematique #conseils-block details form.feedback-form {
+.thematique #conseils-block details.bloc-a-deplier form.question-feedback,
+.thematique #conseils-block details.bloc-a-deplier form.feedback-form {
     display: none;
 }
-.thematique #conseils-block details[open] form.question-feedback,
-.thematique #conseils-block details[open] form.feedback-form {
+.thematique #conseils-block details.bloc-a-deplier[open] form.question-feedback,
+.thematique #conseils-block details.bloc-a-deplier[open] form.feedback-form {
     display: flex;
 }
 
@@ -1338,7 +1338,7 @@ a.button-feedback-social-whatsapp {
     font-size: 95%;
 }
 @media only screen and (max-width: 350px) {
-    .thematique #conseils-block details form.question-feedback,
+    .thematique #conseils-block details.bloc-a-deplier form.question-feedback,
     .thematique #conseils-block form.feedback-form {
         padding-left: 0;
         padding-right: 0;
@@ -1574,13 +1574,13 @@ a.no-type::after {
     background: none;
 }
 
-.conseils details summary {
+.conseils details.bloc-a-deplier > summary {
     cursor: pointer;
 }
-.conseils details:hover {
+.conseils details.bloc-a-deplier:hover {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
 }
-.conseils details {
+.conseils details.bloc-a-deplier {
     display: block;
     border: 1px solid lightgray;
     padding: 1rem 2rem;
@@ -1588,39 +1588,39 @@ a.no-type::after {
     margin-bottom: 2rem;
 }
 @media only screen and (max-width: 680px) {
-    .conseils details {
+    .conseils details.bloc-a-deplier {
         padding: 1rem;
     }
 }
-.conseils details > summary {
+.conseils details.bloc-a-deplier > summary {
     outline: 0;
     list-style: none;
 }
-.conseils details:not([open]) > :not(summary) {
+.conseils details.bloc-a-deplier:not([open]) > :not(summary) {
     display: none;
 }
-.conseils details > summary svg {
+.conseils details.bloc-a-deplier > summary svg {
     height: 40px;
     width: 60px;
     transition: all 0.4s;
     flex-shrink: 0;
 }
-.conseils details:hover,
-.conseils details[open] {
+.conseils details.bloc-a-deplier:hover,
+.conseils details.bloc-a-deplier[open] {
     outline: 0;
 }
-.conseils details > summary:focus h2,
-.conseils details > summary:focus h3 {
+.conseils details.bloc-a-deplier > summary:focus h2,
+.conseils details.bloc-a-deplier > summary:focus h3 {
     outline: 3px solid #9a9aff;
 }
-.conseils details[open] > summary svg {
+.conseils details.bloc-a-deplier[open] > summary svg {
     transform: rotate(540deg);
 }
-.conseils details > summary::marker,
-.conseils details > summary::-webkit-details-marker {
+.conseils details.bloc-a-deplier > summary::marker,
+.conseils details.bloc-a-deplier > summary::-webkit-details-marker {
     display: none;
 }
-.conseils details[open] > summary ~ * {
+.conseils details.bloc-a-deplier[open] > summary ~ * {
     animation: open 0.3s ease-in-out;
 }
 @keyframes open {
@@ -1816,7 +1816,7 @@ a.no-type::after {
     margin-top: 3rem;
     font-size: 175%;
 }
-.thematique .conseils details > summary svg {
+.thematique .conseils details.bloc-a-deplier > summary svg {
     float: right;
     height: 30px;
     width: 30px;
@@ -1923,6 +1923,9 @@ a.no-type::after {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 125%;
+}
+.thematique figure {
+    margin: 1rem 0;
 }
 .thematique img {
     max-width: 100%;
@@ -2062,15 +2065,15 @@ a.no-type::after {
         display: block;
     }
 
-    #conseils-blocs .conseils details {
+    #conseils-blocs .conseils details.bloc-a-deplier {
         box-shadow: none !important;
     }
 
-    #conseils-blocs .conseils summary {
+    #conseils-blocs .conseils details.bloc-a-deplier > summary {
         padding-top: 0;
         background-image: none;
     }
-    #conseils-blocs .conseils summary h3 {
+    #conseils-blocs .conseils details.bloc-a-deplier > summary h3 {
         padding: 0;
     }
 
@@ -2109,7 +2112,7 @@ a.no-type::after {
     }
 
     .block > h2,
-    .conseils summary svg,
+    .conseils .bloc-a-deplier > summary svg,
     .reponse .modifier,
     .form-controls,
     .feedback-block,

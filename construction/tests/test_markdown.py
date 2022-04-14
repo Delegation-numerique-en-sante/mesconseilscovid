@@ -244,7 +244,7 @@ class TestQuestionDirective:
             )
             == dedent(
                 """\
-                <details id="quand-pourrai-je-me-faire-vacciner" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <details id="quand-pourrai-je-me-faire-vacciner" class="bloc-a-deplier" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <summary>
                     <h2>
                         <span itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</span>
@@ -295,7 +295,7 @@ class TestQuestionDirective:
             )
             == dedent(
                 """\
-                <details id="quand-pourrai-je-me-faire-vacciner" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <details id="quand-pourrai-je-me-faire-vacciner" class="bloc-a-deplier" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <summary>
                     <h3>
                         <span itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</span>
@@ -342,7 +342,7 @@ class TestQuestionDirective:
             )
             == dedent(
                 """\
-                <details id="quand-pourrai-je-me-faire-vacciner" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" open>
+                <details id="quand-pourrai-je-me-faire-vacciner" class="bloc-a-deplier" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" open>
                 <summary>
                     <h2>
                         <span itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</span>
@@ -398,7 +398,7 @@ class TestRenvoiDirective:
             )
             == dedent(
                 """\
-                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
+                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose" class="bloc-a-deplier">
                     <summary>
                     <h3>
                         <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span>
@@ -429,7 +429,7 @@ class TestInjectionDirective:
                             "titre": "Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?",
                             "details": dedent(
                                 """\
-                                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
+                                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose" class="bloc-a-deplier">
                                     <summary>
                                         <h3>
                                             <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span>
@@ -460,7 +460,7 @@ class TestInjectionDirective:
             )
             == dedent(
                 """\
-                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
+                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose" class="bloc-a-deplier">
                     <summary>
                         <h3>
                             <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span>

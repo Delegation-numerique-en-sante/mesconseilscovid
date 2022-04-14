@@ -102,7 +102,7 @@ class QuestionDirective(Directive):
             if feedback == "keep"
             else ""
         )
-        return f"""<details id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"{' open' if open_ else ''}>
+        return f"""<details id="{question_id}" class="bloc-a-deplier" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"{' open' if open_ else ''}>
 {render_html_summary('', typographie(question, html=True), level, extra_span=' itemprop="name"')}
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">

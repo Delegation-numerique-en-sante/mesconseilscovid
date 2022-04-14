@@ -75,7 +75,7 @@ function getAnimationBehavior() {
 }
 
 function scrolleAuSummary() {
-    const summaries = document.querySelectorAll('main summary')
+    const summaries = document.querySelectorAll('details.bloc-a-deplier > summary')
     Array.from(summaries).forEach((summary) => {
         summary.addEventListener('click', () => {
             const detailsElement = summary.parentElement
