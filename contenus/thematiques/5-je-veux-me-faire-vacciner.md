@@ -363,7 +363,7 @@
         </table>
 
 
-.. question:: J’ai eu la Covid après ma 3<sup>e</sup> dose, dois-je recevoir un 2<sup>e</sup> rappel ?
+.. question:: J’ai eu la Covid après ma 3<sup>e</sup> dose, dois-je faire un 2<sup>e</sup> rappel ?
     :level: 3
 
     * Si vous avez eu la Covid **plus de 3 mois** après le premier rappel : **non**, un deuxième rappel n’est **pas nécessaire**.
@@ -378,7 +378,7 @@
     </div>
 
 
-.. question:: J’ai eu la Covid avant ma vaccination initiale. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
+.. question:: J’ai eu la Covid avant ma vaccination initiale. Dois-je faire un rappel (dit 3<sup>e</sup> dose) ?
     :level: 3
 
     **Oui**, dans votre cas le rappel sera votre **2<sup>e</sup> dose**.
@@ -389,7 +389,7 @@
 .. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-sanitaire
 
 
-.. question:: Je suis cas contact, puis-je recevoir la dose de rappel ?
+.. question:: Je suis cas contact, est-ce que je peux faire mon rappel ?
     :level: 3
 
     **Non**. Si vous êtes [cas contact](cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)** en vous faisant tester.
@@ -406,7 +406,7 @@
     </div>
 
 
-.. question:: Faut-il que je reçoive une dose de rappel si ma sérologie (test sérologique) est positive ?
+.. question:: Pourquoi faire un rappel vaccinal si ma sérologie (test sérologique) est positive ?
     :level: 3
 
     Si votre sérologie Covid-19 est **positive**, cela veut dire que vous avez déjà été **contaminé(e)** et/ou **vacciné(e)** contre la Covid, mais cela ne signifie pas forcément que vous êtes **efficacement protégé(e)**.
@@ -516,7 +516,7 @@
     </div>
 
 
-.. question:: J’ai des difficultés à me déplacer, puis-je me faire vacciner à domicile ?
+.. question:: J’ai des difficultés à me déplacer, comment me faire vacciner à domicile ?
     :level: 3
 
     Les **infirmiers**, **sage-femmes** et **médecins généralistes** son habilités à vacciner contre la Covid à domicile, avec **tous les vaccins** disponibles et adaptés à votre situation.
@@ -547,7 +547,7 @@
     - Les personnes de **moins de 18 ans** sont vacciné(e)s exclusivement avec les vaccins à ARN messager et de préférence avec le vaccin Pfizer.
 
 
-.. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir ?
+.. question:: Je ne suis pas encore vacciné(e). Combien de doses faire ?
     :level: 3
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe sanitaire une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
@@ -624,7 +624,7 @@
     </div>
 
 
-.. question:: Je suis cas contact, puis-je me faire vacciner ?
+.. question:: Je suis cas contact, est-ce que je peux me faire vacciner ?
     :level: 3
 
     **Non**. Si vous êtes [cas contact](cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)**.
@@ -640,7 +640,7 @@
     </div>
 
 
-.. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
+.. question:: J’ai déjà eu la Covid, est-ce que je dois me faire vacciner (1<sup>re</sup> dose) ?
     :level: 3
 
     **Oui**. Si vous avez eu la Covid, **une seule dose** sera suffisante pour votre vaccination initiale. Cette injection peut avoir lieu **à partir de 2 mois** après votre infection.
@@ -665,7 +665,7 @@
     </div>
 
 
-.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> pour compléter mon schéma vaccinal initial ?
+.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je faire la 2<sup>e</sup> pour compléter mon schéma vaccinal initial ?
     :level: 3
 
     Cela dépend :
@@ -741,7 +741,7 @@
 
 ## Vaccination, grossesse et allaitement
 
-.. question:: Je suis enceinte, puis-je me faire vacciner ?
+.. question:: Je suis enceinte, est-ce que je peux me faire vacciner ?
     :level: 3
 
     **Oui**, d’autant que la grossesse vous expose à des **formes plus sévères** de la Covid.
