@@ -648,7 +648,7 @@
     <div class="voir-aussi">
 
     - [J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose pour compléter mon schéma vaccinal initial ?](#j-ai-deja-eu-la-covid-comment-le-prouver-et-ne-recevoir-qu-une-seule-dose-pour-completer-mon-schema-vaccinal-initial)
-    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [J’ai eu la Covid avant ma vaccination initiale. Dois-je faire un rappel (dit 3<sup>e</sup> dose) ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-dois-je-faire-un-rappel-dit-3-e-dose)
 
     </div>
 
@@ -660,7 +660,7 @@
 
     <div class="voir-aussi">
 
-    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [J’ai eu la Covid avant ma vaccination initiale. Dois-je faire un rappel (dit 3<sup>e</sup> dose) ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-dois-je-faire-un-rappel-dit-3-e-dose)
 
     </div>
 
@@ -675,7 +675,7 @@
 
     <div class="voir-aussi">
 
-    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [J’ai eu la Covid avant ma vaccination initiale. Dois-je faire un rappel (dit 3<sup>e</sup> dose) ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-dois-je-faire-un-rappel-dit-3-e-dose)
 
     </div>
 
