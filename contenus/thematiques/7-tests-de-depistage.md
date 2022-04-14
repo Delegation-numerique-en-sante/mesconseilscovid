@@ -18,7 +18,7 @@
         <img src="infographie-tests-de-depistage.png" alt="Quel test selon ma situation ?">
         <figcaption>
 
-    <a href="https://www.gouvernement.fr/sites/default/files/220318_affichette_tests.pdf">Ouvrir l’infographie</a>
+    <a href="https://solidarites-sante.gouv.fr/IMG/pdf/infographie-test.pdf">Ouvrir l’infographie</a>
 
     ##### Je suis complètement vacciné (conformément au pass) ou j’ai moins de 12 ans
 
