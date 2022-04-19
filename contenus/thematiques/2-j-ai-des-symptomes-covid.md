@@ -62,7 +62,7 @@
     - un **essoufflement** ou des **difficultés à respirer** ;
     - une sensation d’**oppression** ou une douleur au niveau de la **poitrine**.
 
-    Pour une **personne âgée**, l’entourage peut constater une altération brutale de l’état général, l’apparition ou l’aggravation des capacités mentales, un état de confusion, des chutes répétées, une aggravation rapide d’une maladie déjà connue.
+    Pour une **personne âgée**, l’entourage peut constater une altération brutale de l’état général ou des capacités mentales, un état de confusion, des chutes répétées, une aggravation rapide d’une maladie déjà connue.
 
     <div class="voir-aussi">
 
