@@ -30,6 +30,7 @@
 
     <div class="voir-aussi">
 
+    - [Quel est le vaccin administré pour la 2<sup>e</sup> dose de rappel ?](#quel-est-le-vaccin-administre-pour-la-dose-de-rappel-3-e-ou-4-e-dose)
     - [J’ai eu la Covid après ma 3<sup>e</sup> dose, dois-je faire un 2<sup>e</sup> rappel ?](#j-ai-eu-la-covid-apres-ma-3-e-dose-dois-je-faire-un-2-e-rappel)
 
     </div>
@@ -452,7 +453,7 @@
     La **grossesse** est également un facteur de risque de développer des formes graves.
 
 
-.. question:: Quel est le vaccin administré pour la dose de rappel, dite 3<sup>e</sup> dose ?
+.. question:: Quel est le vaccin administré pour la dose de rappel (3<sup>e</sup> ou 4<sup>e</sup> dose) ?
     :level: 3
 
     Le rappel est actuellement réalisé avec un **vaccin à ARN messager uniquement**, c’est-à-dire *Pfizer* ou *Moderna* (demi-dose de 50 µg) :
