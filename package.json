@@ -9,7 +9,7 @@
     "@babel/eslint-plugin": "^7.17.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/register": "^7.17.7",
-    "@mermaid-js/mermaid-cli": "^8.14.0",
+    "@mermaid-js/mermaid-cli": "^9.0.0",
     "chai": "^4.3.6",
     "eslint": "^8.13.0",
     "eslint-plugin-compat": "^4.0.2",
