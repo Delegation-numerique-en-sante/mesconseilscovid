@@ -47,17 +47,6 @@
   "externals": {
     "version.json": false
   },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "useBuiltIns": "usage",
-          "corejs": 3
-        }
-      ]
-    ]
-  },
   "browserslist": [
     "since 2016"
   ]
