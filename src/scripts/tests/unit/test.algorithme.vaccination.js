@@ -1,10 +1,10 @@
 import { assert } from 'chai'
 
-import AlgorithmeOrientation from '../algorithme/orientation'
-import AlgorithmeVaccination from '../algorithme/vaccination'
-import { joursAvant } from '../utils'
+import AlgorithmeOrientation from '../../algorithme/orientation'
+import AlgorithmeVaccination from '../../algorithme/vaccination'
+import { joursAvant } from '../../utils'
 
-import Profil from '../profil'
+import Profil from '../../profil'
 
 describe('Vaccination', function () {
     describe('Pas de Covid passée', function () {

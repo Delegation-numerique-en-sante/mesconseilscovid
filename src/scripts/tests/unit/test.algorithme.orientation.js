@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import { joursAvant } from '../utils'
-import AlgorithmeOrientation from '../algorithme/orientation'
-import Profil from '../profil'
+import { joursAvant } from '../../utils'
+import AlgorithmeOrientation from '../../algorithme/orientation'
+import Profil from '../../profil'
 
 describe('Frise chronologique sur l’isolement', function () {
     describe('Pas de frise', function () {

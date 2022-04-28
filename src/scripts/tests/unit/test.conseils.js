@@ -1,9 +1,9 @@
 import { assert } from 'chai'
 import { JSDOM } from 'jsdom'
 
-import { cacherElementsConditionnels } from '../page/conseils'
-import { joursAvant } from '../utils'
-import Profil from '../profil'
+import { cacherElementsConditionnels } from '../../page/conseils'
+import { joursAvant } from '../../utils'
+import Profil from '../../profil'
 
 describe('Conseils personnels', function () {
     it('Je n’ai pas d’activité pro', function () {

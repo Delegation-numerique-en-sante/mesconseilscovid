@@ -1,11 +1,11 @@
 import { assert } from 'chai'
 import { JSDOM } from 'jsdom'
 
-import AlgorithmeOrientation from '../algorithme/orientation'
+import AlgorithmeOrientation from '../../algorithme/orientation'
 
-import * as injection from '../injection'
+import * as injection from '../../injection'
 
-import Profil from '../profil'
+import Profil from '../../profil'
 
 describe('Injection', function () {
     describe('Caractéristiques à risques', function () {

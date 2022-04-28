@@ -3,8 +3,8 @@ import { itParam } from 'mocha-param'
 
 import { createProfil } from './helpers'
 
-import AlgorithmeOrientation from '../algorithme/orientation'
-import { joursAvant } from '../utils'
+import AlgorithmeOrientation from '../../algorithme/orientation'
+import { joursAvant } from '../../utils'
 
 // On parcourt tous les cas possibles par colonnes.
 const matrice = [

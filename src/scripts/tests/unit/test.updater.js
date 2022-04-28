@@ -1,6 +1,6 @@
 import { assert } from 'chai'
 
-import Updater from '../updater'
+import Updater from '../../updater'
 
 describe('Updater', function () {
     it('La page d’introduction n’est pas interactive', function () {

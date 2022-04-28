@@ -1,4 +1,4 @@
-import Profil from '../profil'
+import Profil from '../../profil'
 
 export function createProfil({
     symptomes_actuels = false,

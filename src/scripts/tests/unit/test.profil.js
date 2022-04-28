@@ -1,7 +1,7 @@
 import { assert } from 'chai'
 
-import Profil from '../profil'
-import { joursAvant } from '../utils'
+import Profil from '../../profil'
+import { joursAvant } from '../../utils'
 
 describe('Profil', function () {
     it('Le nom du profil n’est pas échappé', function () {

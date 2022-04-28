@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import AlgorithmeSuivi from '../algorithme/suivi'
+import AlgorithmeSuivi from '../../algorithme/suivi'
 
-import Profil from '../profil'
+import Profil from '../../profil'
 
 describe('Algorithme auto-suivi', function () {
     describe('Gravité', function () {
