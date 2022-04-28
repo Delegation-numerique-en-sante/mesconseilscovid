@@ -1,0 +1,7 @@
+{
+  "spec": "src/scripts/tests/unit/",
+  "require": [
+    "@babel/register"
+  ],
+  "color": true
+}

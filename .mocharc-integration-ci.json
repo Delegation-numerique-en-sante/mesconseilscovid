@@ -1,0 +1,10 @@
+{
+  "spec": "src/scripts/tests/integration/",
+  "require": [
+    "@babel/register"
+  ],
+  "timeout": 15000,
+  "retries": 5,
+  "bail": true,
+  "color": true
+}
