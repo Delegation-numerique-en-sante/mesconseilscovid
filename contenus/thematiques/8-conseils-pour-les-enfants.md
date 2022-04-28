@@ -431,6 +431,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     <div class="voir-aussi">
 
     * Les [démarches et conditions pour obtenir un arrêt de travail](https://www.ameli.fr/somme/assure/covid-19/dispositifs-dindemnisation/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) sur le site ameli.fr
+    * la fiche [arrêts de travail pour garde d’enfant](https://travail-emploi.gouv.fr/IMG/pdf/fiche_arret_travail-garde-enfant.pdf) du ministère du Travail
 
     </div>
 
