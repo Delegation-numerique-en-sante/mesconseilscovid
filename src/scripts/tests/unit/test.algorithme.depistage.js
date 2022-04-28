@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import { joursAvant } from '../utils'
+import { joursAvant } from '../../utils'
 
-import Profil from '../profil'
+import Profil from '../../profil'
 
 describe('Algorithme dépistage', function () {
     describe('Prise en compte d’un test positif', function () {

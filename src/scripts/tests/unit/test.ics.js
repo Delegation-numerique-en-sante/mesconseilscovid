@@ -1,6 +1,6 @@
 import { assert } from 'chai'
 
-import ICS from '../ics'
+import ICS from '../../ics'
 
 describe('ICS', function () {
     it('On génère un ics sans rrule', function () {

@@ -36,7 +36,7 @@
     "timeago.js": "4.0.2"
   },
   "scripts": {
-    "test": "mocha --color --require @babel/register src/scripts/tests/",
+    "test": "mocha --color --require @babel/register src/scripts/tests/unit/",
     "test:coverage": "nyc npm run test",
     "test-integration": "mocha --color --require @babel/register --bail --timeout 0 src/scripts/tests/integration/",
     "test-integration:ci": "mocha --color --require @babel/register --bail --timeout 15000 --retries=5 src/scripts/tests/integration/",

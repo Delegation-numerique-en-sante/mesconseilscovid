@@ -1,7 +1,7 @@
 import { assert } from 'chai'
 import { JSDOM } from 'jsdom'
 
-import * as affichage from '../affichage'
+import * as affichage from '../../affichage'
 
 describe('Affichage', function () {
     it('On peut masquer des éléments visibles', function () {

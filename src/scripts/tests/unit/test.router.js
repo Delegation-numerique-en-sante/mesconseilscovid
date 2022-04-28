@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import { Router } from '../router'
-import Profil from '../profil'
-import { Questionnaire } from '../questionnaire'
+import { Router } from '../../router'
+import Profil from '../../profil'
+import { Questionnaire } from '../../questionnaire'
 
 class FakeApp {
     // Juste ce qu’il faut pour ces tests

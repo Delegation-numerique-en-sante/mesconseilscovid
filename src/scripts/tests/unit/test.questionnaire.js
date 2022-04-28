@@ -1,14 +1,14 @@
 import { assert } from 'chai'
 
-import { Questionnaire } from '../questionnaire'
+import { Questionnaire } from '../../questionnaire'
 
 import {
     beforeSuiviIntroduction,
     beforeSuiviSymptomes,
     beforeSuiviHistorique,
-} from '../questionnaire'
+} from '../../questionnaire'
 
-import Profil from '../profil'
+import Profil from '../../profil'
 
 const questionnaire = new Questionnaire()
 
