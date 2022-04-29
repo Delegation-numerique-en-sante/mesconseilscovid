@@ -178,7 +178,7 @@ class BundlerThread(Thread):
             for line_bytes in proc.stdout:
                 line = line_bytes.decode("utf-8")
                 print(line)
-                if line.startswith("✨  Built in"):
+                if line.startswith("✨ Built in"):
                     self.trigger_livereload()
 
     def trigger_livereload(self):
