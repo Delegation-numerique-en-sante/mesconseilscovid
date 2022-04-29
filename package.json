@@ -63,6 +63,7 @@
     "version.json"
   ],
   "parcel-namer-rewrite": {
+    "developmentHashing": true,
     "rules": {
       "service-worker.js": "service-worker.js",
       "(.*).css": "mcc{.hash}.css",
