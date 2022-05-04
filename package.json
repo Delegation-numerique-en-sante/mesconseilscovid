@@ -39,7 +39,9 @@
     "parcel-resolver-ignore": "^2.0.0",
     "playwright": "^1.21.1",
     "prettier": "^2.6.2",
-    "st": "^3.0.0"
+    "st": "^3.0.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
   },
   "dependencies": {
     "core-js": "3.22.4",
@@ -56,6 +58,7 @@
     "test-integration": "mocha --config .mocharc-integration.json",
     "test-integration:ci": "mocha --config .mocharc-integration-ci.json",
     "lint": "eslint --color src/scripts/ src/service-worker.js",
+    "check-types": "tsc --noEmit",
     "build": "parcel build src/*.html",
     "build-dev": "parcel src/*.html --log-level info --open"
   },

@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "isolatedModules": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "esModuleInterop": true,
+        "target": "es5"
+    }
+}
