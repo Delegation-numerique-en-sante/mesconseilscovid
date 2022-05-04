@@ -572,9 +572,13 @@ describe('Blocs d’informations additionnels', function () {
         })
     })
 
-    describe('Bloc mesures barrières et le masque', function () {})
+    describe('Bloc mesures barrières et le masque', function () {
+        // rien pour l’instant
+    })
 
-    describe('Bloc Covid', function () {})
+    describe('Bloc Covid', function () {
+        // rien pour l’instant
+    })
 
     describe('Bloc grossesse', function () {
         it('Le bloc grossesse ne s’affiche pas par défaut', function () {

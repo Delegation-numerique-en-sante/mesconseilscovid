@@ -11,7 +11,9 @@ class FakeApp {
         this.stockage = new FakeStockage()
         this.questionnaire = new Questionnaire()
     }
-    trackPageView() {}
+    trackPageView() {
+        // rien
+    }
 }
 
 class FakeStockage {
@@ -53,11 +55,14 @@ describe('Routeur', function () {
     })
 
     it('La racine redirige vers la page introduction', function () {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/',
         })
         this.router = new Router(new FakeApp())
-        this.router.addAppRoute('introduction', () => {})
+        this.router.addAppRoute('introduction', () => {
+            // rien ici
+        })
         assert.strictEqual(window.location.href, 'https://test/')
 
         this.router.resolve()
@@ -66,11 +71,14 @@ describe('Routeur', function () {
     })
 
     it('Une page inconnue redirige vers la page introduction', function () {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/#inconnue',
         })
         this.router = new Router(new FakeApp())
-        this.router.addAppRoute('introduction', () => {})
+        this.router.addAppRoute('introduction', () => {
+            // rien ici
+        })
         assert.strictEqual(window.location.href, 'https://test/#inconnue')
 
         this.router.resolve()
@@ -79,11 +87,14 @@ describe('Routeur', function () {
     })
 
     it('La redirection conserve la source', function () {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/?source=foo',
         })
         this.router = new Router(new FakeApp())
-        this.router.addAppRoute('introduction', () => {})
+        this.router.addAppRoute('introduction', () => {
+            // rien ici
+        })
         assert.strictEqual(window.location.href, 'https://test/?source=foo')
 
         this.router.resolve()
@@ -95,6 +106,7 @@ describe('Routeur', function () {
     })
 
     it('Le contenu de la page cible est chargé', function () {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/#hello',
         })
@@ -113,6 +125,7 @@ describe('Routeur', function () {
     })
 
     after(function () {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         const cleanup = require('jsdom-global')()
         cleanup()
     })

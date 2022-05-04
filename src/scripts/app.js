@@ -112,7 +112,9 @@ export default class App {
         // Compatibilité avec les anciens noms de pages.
         this.router.navigo.on(
             new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
-            () => {},
+            () => {
+                // rien ici
+            },
             {
                 before: (done) => {
                     this.router.redirectTo('symptomes')
@@ -120,15 +122,23 @@ export default class App {
                 },
             }
         )
-        this.router.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
-            before: (done) => {
-                this.router.redirectTo('situation')
-                done(false)
+        this.router.navigo.on(
+            new RegExp('^(residence|foyer|activitepro)$'),
+            () => {
+                // rien ici
             },
-        })
+            {
+                before: (done) => {
+                    this.router.redirectTo('situation')
+                    done(false)
+                },
+            }
+        )
         this.router.navigo.on(
             new RegExp('^(caracteristiques|antecedents)$'),
-            () => {},
+            () => {
+                // rien ici
+            },
             {
                 before: (done) => {
                     this.router.redirectTo('sante')
@@ -136,12 +146,18 @@ export default class App {
                 },
             }
         )
-        this.router.navigo.on('pediatrie', () => {}, {
-            before: function (done) {
-                window.location.replace('conseils-pour-les-enfants.html')
-                done(false)
+        this.router.navigo.on(
+            'pediatrie',
+            () => {
+                // rien ici
             },
-        })
+            {
+                before: function (done) {
+                    window.location.replace('conseils-pour-les-enfants.html')
+                    done(false)
+                },
+            }
+        )
     }
     chargerProfilActuel() {
         return this.stockage.getProfilActuel().then((nom) => {
