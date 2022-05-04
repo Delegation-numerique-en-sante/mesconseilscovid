@@ -1,5 +1,12 @@
 # Changelog
 
+## 2022-05-04
+
+* met à jour la page sur les tests de dépistage
+* ajoute les règles pour les voyages de/vers l’outre-mer
+* ajoute un lien vers la fiche arrêts de travail pour garde d’enfants
+* cache le bandeau pour les élections (jusqu’aux législatives)
+
 ## 2022-04-13
 
 * ajoute des informations sur le Paxlovid (question + conseils personnalisés)
