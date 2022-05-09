@@ -73,21 +73,37 @@ export function search(query, stopWords, searchIndex, searchStatus, resultList) 
  * @param  {List}  regMap Regular expressions for the highlights
  */
 function showResults(results, regMap, searchStatus, resultList) {
-    let status = 'Aucune question n’a été trouvée 😢'
-    let searchResults = ''
-    if (results.length) {
-        const plural = results.length > 1 ? 's' : ''
-        status = `${results.length} question${plural} trouvée${plural} 🙌`
-        searchResults = results
-            .map(function (result) {
-                const url = result.article.url
-                const title = highlightText(result.article.title, regMap)
-                return `<li><a href="${url}">${title}</a></li>`
-            })
-            .join('')
+    const resultsLength = results.length
+    if (!resultsLength) {
+        resultList.innerHTML = ''
+        searchStatus.innerHTML = 'Aucune question/réponse n’a été trouvée 😢'
+        return
     }
-    searchStatus.innerHTML = status
-    resultList.innerHTML = searchResults
+    const plural = results.length > 1 ? 's' : ''
+    searchStatus.innerHTML = `${results.length} question${plural}/réponse${plural} trouvée${plural} 🙌`
+
+    const NB_VISIBLE_RESULTS = 5
+    const searchResults = results.map((result) => {
+        const url = result.article.url
+        const title = highlightText(result.article.title, regMap)
+        return `<li><a href="${url}">${title}</a></li>`
+    })
+    if (resultsLength <= NB_VISIBLE_RESULTS) {
+        resultList.innerHTML = `<ul>${searchResults.join('')}</ul>`
+    } else {
+        const visibleSearchResults = searchResults.slice(0, NB_VISIBLE_RESULTS)
+        const hiddenSearchResults = searchResults.slice(NB_VISIBLE_RESULTS)
+        const hiddenPlural = hiddenSearchResults.length > 1 ? 's' : ''
+        resultList.innerHTML = `
+        <ul>${visibleSearchResults.join('')}</ul>
+        <details>
+            <summary>Voir plus de résultats de recherche (${
+                hiddenSearchResults.length
+            } autre${hiddenPlural})</summary>
+            <ul>${hiddenSearchResults.join('')}</ul>
+        </details>
+        `
+    }
 }
 
 /**

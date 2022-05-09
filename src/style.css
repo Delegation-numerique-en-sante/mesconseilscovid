@@ -324,6 +324,9 @@ legend h1 {
 .recherche .button {
     font-size: 1rem;
 }
+.recherche #search-results summary {
+    text-align: center;
+}
 
 .introduction-block {
     text-align: center;
