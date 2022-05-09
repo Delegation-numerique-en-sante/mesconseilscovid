@@ -75,7 +75,6 @@ function initRecherche() {
     // Retrieving the search index and stopwords from JSON.
     // See https://v8.dev/blog/cost-of-javascript-2019#json
     let searchIndex = JSON.parse(document.getElementById('search-index').textContent)
-    let stopWords = JSON.parse(document.getElementById('search-stop-words').textContent)
 
     // Get the DOM elements
     let form = document.querySelector('#form-search')
@@ -84,28 +83,27 @@ function initRecherche() {
     let searchStatus = document.querySelector('#search-status')
 
     // Make sure required content exists
-    if (!form || !input || !resultList || !searchStatus || !searchIndex || !stopWords)
-        return
+    if (!form || !input || !resultList || !searchStatus || !searchIndex) return
 
     // Create a submit handler
     form.addEventListener('submit', (event) => {
         event.preventDefault()
-        search(input.value, stopWords, searchIndex, searchStatus, resultList)
+        search(input.value, searchIndex, searchStatus, resultList)
     })
 
     // Create a typeahead handler
     form.addEventListener('keyup', () => {
-        search(input.value, stopWords, searchIndex, searchStatus, resultList)
+        search(input.value, searchIndex, searchStatus, resultList)
     })
 
     // Create a reset handler
     form.addEventListener('reset', () => {
-        search('', stopWords, searchIndex, searchStatus, resultList)
+        search('', searchIndex, searchStatus, resultList)
         searchStatus.innerHTML = ''
     })
 
     // Check for query strings onload
-    onload(input, stopWords, searchIndex, searchStatus, resultList)
+    onload(input, searchIndex, searchStatus, resultList)
 }
 
 registerTimeAgo('fr', function (number, index) {
