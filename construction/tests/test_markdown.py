@@ -370,6 +370,50 @@ class TestQuestionDirective:
             )
         )
 
+    def test_without_feedback(self):
+        from construction.markdown import create_markdown_parser
+
+        markdown = create_markdown_parser(with_feedback=False)
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. question:: Quand pourrai-je me faire vacciner ?
+
+                        Vous pouvez vous faire vacciner **dès maintenant** :
+
+                        * si vous avez **18 ans et plus**, sans conditions ;
+                        * si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
+                        * si vous êtes au **second trimestre** de votre grossesse.
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <details id="quand-pourrai-je-me-faire-vacciner" class="bloc-a-deplier" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <summary>
+                    <h2>
+                        <span itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</span>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
+                    </h2>
+                </summary>
+
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text">
+                <p>Vous pouvez vous faire vacciner <strong>dès maintenant</strong>&nbsp;:</p>
+                <ul>
+                <li>si vous avez <strong>18&nbsp;ans et plus</strong>, sans conditions&#8239;;</li>
+                <li>si vous avez entre <strong>16&nbsp;et 17&nbsp;ans</strong> et présentez un risque de développer une <strong>forme très grave</strong> de Covid (cancer, dialyse, trisomie&nbsp;21, etc.)&#8239;;</li>
+                <li>si vous êtes au <strong>second trimestre</strong> de votre grossesse.</li>
+                </ul>
+                </div>
+                </div>
+
+                </details>
+                """
+            )
+        )
+
 
 class TestRenvoiDirective:
     def test_renvoi(self):

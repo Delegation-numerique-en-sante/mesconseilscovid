@@ -9,21 +9,25 @@ from .slugs import slugify_title
 from .thematiques import get_thematiques
 
 
-def build_questions_index():
+def build_questions_index(with_feedback=True):
     html_parser = create_markdown_parser()
     return {
-        page.name + ".html": {"titre": page.title, "questions": extract_questions(page)}
+        page.name
+        + ".html": {
+            "titre": page.title,
+            "questions": extract_questions(page, with_feedback),
+        }
         for page in get_thematiques(html_parser)
     }
 
 
-def extract_questions(page):
+def extract_questions(page, with_feedback=True):
     ast_parser = mistune.create_markdown(
         renderer=mistune.AstRenderer(), plugins=[QuestionDirective()]
     )
     ast_tree = ast_parser.read(page.path)
 
-    html_parser = create_markdown_parser()
+    html_parser = create_markdown_parser(with_feedback=with_feedback)
     html = str(render_markdown_file(page.path, html_parser))
     html_tree = SelectolaxHTMLParser(html)
 

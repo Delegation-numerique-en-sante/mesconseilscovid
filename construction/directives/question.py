@@ -34,20 +34,25 @@ class QuestionDirective(Directive):
     https://developers.google.com/search/docs/data-types/faqpage?hl=fr
     """
 
+    def __init__(self, with_feedback=True):
+        self.with_feedback = with_feedback
+
     def parse(self, block, m, state):
         question = m.group("value")
         options = self.parse_options(m)
         if options:
             options = dict(options)
             level = int(options.get("level", 2))
-            feedback = options.get("feedback", "keep")
+            feedback = (
+                options.get("feedback", "keep") if self.with_feedback else "remove"
+            )
             open_ = options.get("open", "").lower() == "true"
             expires = options.get("expires", "")
             if expires:
                 expires = parse(expires, settings={"DEFAULT_LANGUAGES": ["fr"]}).date()
         else:
             level = 2
-            feedback = "keep"
+            feedback = "keep" if self.with_feedback else "remove"
             open_ = False
             expires = None
 

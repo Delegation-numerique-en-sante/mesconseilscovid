@@ -56,10 +56,10 @@ class CustomHTMLRenderer(FrenchTypographyMixin, ClassMixin, mistune.HTMLRenderer
     pass
 
 
-def create_markdown_parser(questions_index=None):
+def create_markdown_parser(questions_index=None, with_feedback=True):
     plugins = [
         SectionDirective(),
-        QuestionDirective(),
+        QuestionDirective(with_feedback),
         DirectiveToc(),
     ]
     if questions_index is not None:

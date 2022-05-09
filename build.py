@@ -83,12 +83,12 @@ def extrait_actualites():
 
 
 def get_search_index(thematiques):
-    questions_index = build_questions_index()
+    questions_index = build_questions_index(with_feedback=False)
     questions = [
         {
-            "title_page": content["titre"],  # Useful for matching accuracy?
+            "title_page": content["titre"],  # Useful for matching score?
             "title": question["titre"],
-            "content": do_striptags(question["details"]),  # TODO: remove feedback part!
+            "content": do_striptags(question["details"]),
             "url": f"{thematique_page}#{slug}",
         }
         for thematique_page, content in questions_index.items()
@@ -112,6 +112,7 @@ def thematiques():
     fr_thematiques = [
         thematique for thematique in thematiques if thematique.lang != "en"
     ]
+    search_index = get_search_index(fr_thematiques)
     for thematique in thematiques:
         autres_thematiques = [t for t in thematiques if t != thematique]
         content = render_template(
@@ -124,7 +125,7 @@ def thematiques():
                 "meta_unsupported_browser": responses["meta_unsupported_browser"],
                 "meta_bandeau_elections": responses["meta_bandeau_elections"],
                 "meta_pied_de_page": meta_pied_de_page,
-                "search_index": get_search_index(fr_thematiques),
+                "search_index": search_index,
             },
         )
         (SRC_DIR / f"{thematique.name}.html").write_text(content)
