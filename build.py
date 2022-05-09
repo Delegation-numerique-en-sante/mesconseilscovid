@@ -109,6 +109,9 @@ def thematiques():
         f" - Mise à jour le {version.strftime('%d-%m-%Y')}",
     )
     thematiques = get_thematiques(markdown_parser)
+    fr_thematiques = [
+        thematique for thematique in thematiques if thematique.lang != "en"
+    ]
     for thematique in thematiques:
         autres_thematiques = [t for t in thematiques if t != thematique]
         content = render_template(
@@ -121,6 +124,7 @@ def thematiques():
                 "meta_unsupported_browser": responses["meta_unsupported_browser"],
                 "meta_bandeau_elections": responses["meta_bandeau_elections"],
                 "meta_pied_de_page": meta_pied_de_page,
+                "search_index": get_search_index(fr_thematiques),
             },
         )
         (SRC_DIR / f"{thematique.name}.html").write_text(content)
