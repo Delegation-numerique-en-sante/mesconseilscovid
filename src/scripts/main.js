@@ -82,67 +82,30 @@ function initRecherche() {
     let input = document.querySelector('#input-search')
     let resultList = document.querySelector('#search-results')
     let searchStatus = document.querySelector('#search-status')
-    let searchResultTemplate = document.querySelector('#search-result')
 
     // Make sure required content exists
-    if (
-        !form ||
-        !input ||
-        !resultList ||
-        !searchStatus ||
-        !searchIndex ||
-        !stopWords ||
-        !searchResultTemplate
-    )
+    if (!form || !input || !resultList || !searchStatus || !searchIndex || !stopWords)
         return
 
     // Create a submit handler
     form.addEventListener('submit', (event) => {
         event.preventDefault()
-        search(
-            input.value,
-            stopWords,
-            searchIndex,
-            searchResultTemplate,
-            searchStatus,
-            resultList
-        )
+        search(input.value, stopWords, searchIndex, searchStatus, resultList)
     })
 
     // Create a typeahead handler
     form.addEventListener('keyup', () => {
-        search(
-            input.value,
-            stopWords,
-            searchIndex,
-            searchResultTemplate,
-            searchStatus,
-            resultList
-        )
+        search(input.value, stopWords, searchIndex, searchStatus, resultList)
     })
 
     // Create a reset handler
     form.addEventListener('reset', () => {
-        search(
-            '',
-            stopWords,
-            searchIndex,
-            searchResultTemplate,
-            searchStatus,
-            resultList
-        )
+        search('', stopWords, searchIndex, searchStatus, resultList)
         searchStatus.innerHTML = ''
     })
 
     // Check for query strings onload
-    onload(
-        input,
-        stopWords,
-        searchIndex,
-        searchResultTemplate,
-        searchStatus,
-        resultList
-    )
+    onload(input, stopWords, searchIndex, searchStatus, resultList)
 }
 
 registerTimeAgo('fr', function (number, index) {

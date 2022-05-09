@@ -6,39 +6,18 @@
 /**
  * If there's a query string search term, search it on page load
  */
-export function onload(
-    input,
-    stopWords,
-    searchIndex,
-    searchResultTemplate,
-    searchStatus,
-    resultList
-) {
+export function onload(input, stopWords, searchIndex, searchStatus, resultList) {
     let query = new URLSearchParams(window.location.search).get('s')
     if (!query) return
     input.value = query
-    search(
-        query,
-        stopWords,
-        searchIndex,
-        searchResultTemplate,
-        searchStatus,
-        resultList
-    )
+    search(query, stopWords, searchIndex, searchStatus, resultList)
 }
 
 /**
  * Search for matches
  * @param  {String} query The term to search for
  */
-export function search(
-    query,
-    stopWords,
-    searchIndex,
-    searchResultTemplate,
-    searchStatus,
-    resultList
-) {
+export function search(query, stopWords, searchIndex, searchStatus, resultList) {
     // Create a regex for each query
     let regMap = query
         .toLowerCase()
@@ -82,7 +61,7 @@ export function search(
         })
 
     // Display the results
-    showResults(results, regMap, searchResultTemplate, searchStatus, resultList)
+    showResults(results, regMap, searchStatus, resultList)
 
     // Update the URL
     updateURL(query)
@@ -93,7 +72,7 @@ export function search(
  * @param  {Array}  results The results to display
  * @param  {List}  regMap Regular expressions for the highlights
  */
-function showResults(results, regMap, searchResultTemplate, searchStatus, resultList) {
+function showResults(results, regMap, searchStatus, resultList) {
     let status = 'Aucune question n’a été trouvée 😢'
     let searchResults = ''
     if (results.length) {
@@ -101,30 +80,14 @@ function showResults(results, regMap, searchResultTemplate, searchStatus, result
         status = `${results.length} question${plural} trouvée${plural} 🙌`
         searchResults = results
             .map(function (result) {
-                return interpolate(searchResultTemplate.innerHTML, {
-                    url: result.article.url,
-                    title: highlightText(result.article.title, regMap),
-                    content: highlightText(result.article.content, regMap),
-                })
+                const url = result.article.url
+                const title = highlightText(result.article.title, regMap)
+                return `<li><a href="${url}">${title}</a></li>`
             })
             .join('')
     }
     searchStatus.innerHTML = status
     resultList.innerHTML = searchResults
-}
-
-/**
- * Get a template from a string
- * https://stackoverflow.com/a/41015840
- * https://gomakethings.com/html-templates-with-vanilla-javascript/
- * @param  {String} str    The string to interpolate
- * @param  {Object} params The parameters
- * @return {String}        The interpolated string
- */
-function interpolate(str, params) {
-    let names = Object.keys(params)
-    let vals = Object.values(params)
-    return new Function(...names, `return \`${str}\``)(...vals)
 }
 
 /**
