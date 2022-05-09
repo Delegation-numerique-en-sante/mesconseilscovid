@@ -11,6 +11,7 @@ import SUIVI_IMAGES from '../suivi_*.svg'
 
 import { register as registerTimeAgo } from 'timeago.js'
 
+import { search, onload } from './recherche'
 import { bindSuppressionTotale } from './actions'
 import { pageThematique } from './page/thematiques/pageThematique'
 import { estPageThematique } from './page/thematiques/navigation'
@@ -28,6 +29,7 @@ window.app = app
         }
         initLiensPiedDePage(app)
         initLiensRoleButton()
+        initRecherche()
     })
 })()
 
@@ -67,6 +69,80 @@ function initLiensRoleButton() {
             }
         }
     })
+}
+
+function initRecherche() {
+    // Retrieving the search index and stopwords from JSON.
+    // See https://v8.dev/blog/cost-of-javascript-2019#json
+    let searchIndex = JSON.parse(document.getElementById('search-index').textContent)
+    let stopWords = JSON.parse(document.getElementById('search-stop-words').textContent)
+
+    // Get the DOM elements
+    let form = document.querySelector('#form-search')
+    let input = document.querySelector('#input-search')
+    let resultList = document.querySelector('#search-results')
+    let searchStatus = document.querySelector('#search-status')
+    let searchResultTemplate = document.querySelector('#search-result')
+
+    // Make sure required content exists
+    if (
+        !form ||
+        !input ||
+        !resultList ||
+        !searchStatus ||
+        !searchIndex ||
+        !stopWords ||
+        !searchResultTemplate
+    )
+        return
+
+    // Create a submit handler
+    form.addEventListener('submit', (event) => {
+        event.preventDefault()
+        search(
+            input.value,
+            stopWords,
+            searchIndex,
+            searchResultTemplate,
+            searchStatus,
+            resultList
+        )
+    })
+
+    // Create a typeahead handler
+    form.addEventListener('keyup', () => {
+        search(
+            input.value,
+            stopWords,
+            searchIndex,
+            searchResultTemplate,
+            searchStatus,
+            resultList
+        )
+    })
+
+    // Create a reset handler
+    form.addEventListener('reset', () => {
+        search(
+            '',
+            stopWords,
+            searchIndex,
+            searchResultTemplate,
+            searchStatus,
+            resultList
+        )
+        searchStatus.innerHTML = ''
+    })
+
+    // Check for query strings onload
+    onload(
+        input,
+        stopWords,
+        searchIndex,
+        searchResultTemplate,
+        searchStatus,
+        resultList
+    )
 }
 
 registerTimeAgo('fr', function (number, index) {

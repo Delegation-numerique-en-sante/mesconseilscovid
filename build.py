@@ -12,6 +12,7 @@ from time import perf_counter
 
 import httpx
 import toml
+from jinja2.filters import do_striptags
 from minicli import cli, run, wrap
 
 from construction.markdown import create_markdown_parser, render_markdown_file
@@ -67,7 +68,10 @@ def index():
     ]
 
     content = render_template(
-        "index.html", actualites=extrait_actualites(), **responses
+        "index.html",
+        actualites=extrait_actualites(),
+        search_index=get_search_index(fr_thematiques),
+        **responses,
     )
     content = cache_external_pdfs(content)
     (SRC_DIR / "index.html").write_text(content)
@@ -76,6 +80,21 @@ def index():
 def extrait_actualites():
     actualites = [toml.load(f) for f in each_file_from(CONTENUS_DIR / "actualites")]
     return sorted(actualites, key=itemgetter("date"), reverse=True)
+
+
+def get_search_index(thematiques):
+    questions_index = build_questions_index()
+    questions = [
+        {
+            "title_page": content["titre"],  # Useful for matching accuracy?
+            "title": question["titre"],
+            "content": do_striptags(question["details"]),  # TODO: remove feedback part!
+            "url": f"{thematique_page}#{slug}",
+        }
+        for thematique_page, content in questions_index.items()
+        for slug, question in content["questions"].items()
+    ]
+    return json.dumps(questions, indent=2)
 
 
 @cli

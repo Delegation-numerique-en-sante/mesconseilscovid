@@ -313,6 +313,17 @@ legend h1 {
         padding-left: 1rem;
     }
 }
+.recherche {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+.recherche form,
+.recherche #search-status {
+    text-align: center;
+}
+.recherche .button {
+    font-size: 1rem;
+}
 
 .introduction-block {
     text-align: center;
@@ -1175,6 +1186,7 @@ fieldset ul.details {
 
 input[type='text'],
 input[type='date'],
+input[type='search'],
 input[type='submit'],
 select {
     appearance: none;
