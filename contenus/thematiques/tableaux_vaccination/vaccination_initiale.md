@@ -1,7 +1,7 @@
 <table class="table">
   <thead>
       <tr>
-          <th>Vaccination initiale<br><span style="font-style: italic; font-weight: normal">(tous vaccins)</span></th>
+          <th>Vaccination initiale<br><span class="subheading">(tous vaccins)</span></th>
       </tr>
   </thead>
   <tbody>

@@ -1,7 +1,7 @@
 <table class="table">
   <thead>
       <tr>
-          <th>Rappel vaccinal<br><span style="font-style: italic; font-weight: normal">(Pfizer ou Moderna)</span></th>
+          <th>Rappel vaccinal<br><span class="subheading">(Pfizer ou Moderna)</span></th>
       </tr>
   </thead>
   <tbody>

@@ -81,7 +81,7 @@
 
     {{ tableau_vaccination('vaccination_initiale') }}
 
-    <div style="display: flex; align-items: center">
+    <div class="flex-center">
         <p class="gros plus">+</p>
     </div>
 
