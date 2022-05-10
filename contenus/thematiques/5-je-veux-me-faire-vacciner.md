@@ -87,7 +87,7 @@
       </tbody>
     </table>
 
-    <div style="display: flex; align-items: center">
+    <div class="flex-center">
         <p class="gros plus">+</p>
     </div>
 
@@ -138,7 +138,7 @@
       </tbody>
     </table>
 
-    <div style="display: flex; align-items: center">
+    <div class="flex-center">
         <p class="gros plus">+</p>
     </div>
 
@@ -192,7 +192,7 @@
       </tbody>
     </table>
 
-    <div style="display: flex; align-items: center">
+    <div class="flex-center">
         <p class="gros plus">+</p>
     </div>
 
@@ -241,7 +241,7 @@
       </tbody>
     </table>
 
-    <div style="display: flex; align-items: center">
+    <div class="flex-center">
         <p class="gros plus">+</p>
     </div>
 
@@ -293,7 +293,7 @@
           </tbody>
         </table>
 
-        <div style="display: flex; align-items: center">
+        <div class="flex-center">
             <p class="gros plus">+</p>
         </div>
 
@@ -341,7 +341,7 @@
           </tbody>
         </table>
 
-        <div style="display: flex; align-items: center">
+        <div class="flex-center">
             <p class="gros plus">+</p>
         </div>
 

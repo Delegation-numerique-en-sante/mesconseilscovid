@@ -1715,6 +1715,10 @@ a.no-type::after {
     margin-bottom: 2rem;
     margin-right: 1rem;
 }
+.tableaux-vaccination-complete .flex-center {
+    display: flex;
+    align-items: center;
+}
 @media only screen and (max-width: 680px) {
     .tableaux-vaccination-complete {
         flex-direction: column;
@@ -1744,6 +1748,10 @@ a.no-type::after {
 #suivi-historique-block table thead td,
 #suivi-historique-block table thead th {
     font-weight: bold;
+}
+.table thead th .subheading {
+    font-style: italic;
+    font-weight: normal;
 }
 .table td,
 .table th,
