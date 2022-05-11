@@ -122,35 +122,21 @@ function showResults(
  * Highlight the text in the UI
  */
 function highlightText(text: string, regMap: RegExp[]) {
-    // TODO: deal with close matches when multiple words are looked for,
-    // it does not look trivial because you have to memorize positions
-    // then create extracts.
-    // For instance: `cas contact`
-    const extractBoundariesSize = 100
-    const textLength = text.length
-    let extracts = []
+    let extract = text
     for (let reg of regMap) {
         const index = text.search(reg)
         if (index === -1) {
             continue
         }
-        let extract = text.substring(
-            index - extractBoundariesSize,
-            index + reg.source.length + extractBoundariesSize
-        )
         // TODISCUSS: we replace with the source but in case there is
         // an uppercase letter it will disappear from the extract
         // (is that confusing or closer to what is expected?)
         extract = extract.replace(reg, `<mark>${reg.source}</mark>`)
-        const prefixEllipsis = index - extractBoundariesSize >= 0 ? '…' : ''
-        const suffixEllipsis = index + extractBoundariesSize <= textLength ? '…' : ''
-        extracts.push(`${prefixEllipsis}${extract}${suffixEllipsis}`)
     }
-    if (!extracts.length && textLength < 200) {
-        // If there is no match but it's a short title, return it.
+    if (!extract.length) {
         return text
     }
-    return extracts.join('')
+    return extract
 }
 
 /**
