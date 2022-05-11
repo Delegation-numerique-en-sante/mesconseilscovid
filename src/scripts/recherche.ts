@@ -52,6 +52,11 @@ export function search(
                 if (reg.test(question.title)) {
                     priority += 100
                 }
+                // Cette pondération fait remonter toutes les questions de cette page
+                // Peut-être que c’est trop ?
+                if (reg.test(question.title_page)) {
+                    priority += 50
+                }
                 let occurences = question.content.match(reg)
                 if (occurences) {
                     priority += occurences.length
