@@ -72,7 +72,7 @@ function initLiensRoleButton() {
 }
 
 function initRecherche() {
-    // Retrieving the search index and stopwords from JSON.
+    // Retrieving the search index from JSON.
     // See https://v8.dev/blog/cost-of-javascript-2019#json
     let searchIndex = JSON.parse(document.getElementById('search-index').textContent)
 

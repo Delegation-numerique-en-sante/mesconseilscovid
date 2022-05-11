@@ -24,16 +24,12 @@ export function search(query, searchIndex, searchStatus, resultList) {
     let regMap = query
         .toLowerCase()
         .split(' ')
-        .filter(function (word) {
-            return word.length && !STOPWORDS.includes(word)
-        })
-        .map(function (word) {
-            return new RegExp(word, 'i')
-        })
+        .filter((word) => word.length && !STOPWORDS.includes(word))
+        .map((word) => new RegExp(word, 'i'))
 
     // Get and sort the results
     let results = searchIndex
-        .reduce(function (results, article) {
+        .reduce((results, article) => {
             // Setup priority count
             let priority = 0
 
@@ -58,9 +54,7 @@ export function search(query, searchIndex, searchStatus, resultList) {
 
             return results
         }, [])
-        .sort(function (article1, article2) {
-            return article2.priority - article1.priority
-        })
+        .sort((article1, article2) => article2.priority - article1.priority)
 
     // Display the results
     showResults(results, regMap, searchStatus, resultList)
