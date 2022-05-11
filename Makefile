@@ -112,6 +112,9 @@ lint:  ## Run ESLint + check code style.
 	npm run-script lint
 	./node_modules/.bin/prettier "src/**/*.{js,ts,css}" --check
 
+check-types:  ## Run type checking for TypeScript.
+	npm run-script check-types
+
 pretty:  ## Run PrettierJS.
 	./node_modules/.bin/prettier "src/**/*.{js,ts,css}" --write
 
@@ -148,7 +151,7 @@ dev-ssl: key.pem dist/index.html  ## Local HTTPS server with auto rebuild (witho
 	python3 serve.py --watch $(open) --ssl
 
 
-pre-commit: pretty lint test-unit dist/index.html check-orphelins check-diagrammes  ## Interesting prior to commit/push.
+pre-commit: pretty lint check-types test-unit dist/index.html check-orphelins check-diagrammes  ## Interesting prior to commit/push.
 
 release:
 	echo "{\"version\": \"$$(date --iso-8601)\"}" >static/version.json
