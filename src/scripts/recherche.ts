@@ -68,7 +68,7 @@ export function search(
         .sort((result1, result2) => result2.priority - result1.priority)
 
     // Display the results
-    showResults(results, regMap, searchStatus, resultList)
+    showResults(results, query, regMap, searchStatus, resultList)
 
     // Update the URL
     updateURL(query)
@@ -79,6 +79,7 @@ export function search(
  */
 function showResults(
     results: Result[],
+    query: string,
     regMap: RegExp[],
     searchStatus: HTMLElement,
     resultList: HTMLElement
@@ -86,7 +87,11 @@ function showResults(
     const resultsLength = results.length
     if (!resultsLength) {
         resultList.innerHTML = ''
-        searchStatus.innerHTML = 'Aucune question/réponse n’a été trouvée 😢'
+        if (query.length) {
+            searchStatus.innerHTML = 'Aucune question/réponse n’a été trouvée 😢'
+        } else {
+            searchStatus.innerHTML = ''
+        }
         return
     }
     const plural = results.length > 1 ? 's' : ''
