@@ -1,14 +1,24 @@
 /* See:
- * https://gomakethings.com/how-to-create-a-search-page-for-a-static-website-with-vanilla-js/
- * https://gomakethings.com/how-to-update-the-url-of-a-page-without-causing-a-reload-using-vanilla-javascript/
+ * https://gomakethings.com/
+ * how-to-create-a-search-page-for-a-static-website-with-vanilla-js/
+ * https://gomakethings.com/
+ * how-to-update-the-url-of-a-page-without-causing-a-reload-using-vanilla-javascript/
  */
 
 import STOPWORDS from './recherche_stopwords'
 
+type Question = { title: string; content: string; url: URL; title_page: string }
+type Result = { priority: number; question: Question }
+
 /**
  * If there's a query string search term, search it on page load
  */
-export function onload(input, searchIndex, searchStatus, resultList) {
+export function onload(
+    input: HTMLInputElement,
+    searchIndex: [],
+    searchStatus: HTMLElement,
+    resultList: HTMLElement
+) {
     let query = new URLSearchParams(window.location.search).get('s')
     if (!query) return
     input.value = query
@@ -17,9 +27,13 @@ export function onload(input, searchIndex, searchStatus, resultList) {
 
 /**
  * Search for matches
- * @param  {String} query The term to search for
  */
-export function search(query, searchIndex, searchStatus, resultList) {
+export function search(
+    query: string,
+    searchIndex: [],
+    searchStatus: HTMLElement,
+    resultList: HTMLElement
+) {
     // Create a regex for each query
     let regMap = query
         .toLowerCase()
@@ -28,17 +42,17 @@ export function search(query, searchIndex, searchStatus, resultList) {
         .map((word) => new RegExp(word, 'i'))
 
     // Get and sort the results
-    let results = searchIndex
-        .reduce((results, article) => {
+    let results: Result[] = searchIndex
+        .reduce((results: Result[], question: Question) => {
             // Setup priority count
             let priority = 0
 
             // Assign priority
             for (let reg of regMap) {
-                if (reg.test(article.title)) {
+                if (reg.test(question.title)) {
                     priority += 100
                 }
-                let occurences = article.content.match(reg)
+                let occurences = question.content.match(reg)
                 if (occurences) {
                     priority += occurences.length
                 }
@@ -46,15 +60,12 @@ export function search(query, searchIndex, searchStatus, resultList) {
 
             // If any matches, push to results
             if (priority > 0) {
-                results.push({
-                    priority: priority,
-                    article: article,
-                })
+                results.push({ priority, question })
             }
 
             return results
         }, [])
-        .sort((article1, article2) => article2.priority - article1.priority)
+        .sort((result1, result2) => result2.priority - result1.priority)
 
     // Display the results
     showResults(results, regMap, searchStatus, resultList)
@@ -65,10 +76,13 @@ export function search(query, searchIndex, searchStatus, resultList) {
 
 /**
  * Show the search results in the UI
- * @param  {Array}  results The results to display
- * @param  {List}  regMap Regular expressions for the highlights
  */
-function showResults(results, regMap, searchStatus, resultList) {
+function showResults(
+    results: Result[],
+    regMap: RegExp[],
+    searchStatus: HTMLElement,
+    resultList: HTMLElement
+) {
     const resultsLength = results.length
     if (!resultsLength) {
         resultList.innerHTML = ''
@@ -76,12 +90,14 @@ function showResults(results, regMap, searchStatus, resultList) {
         return
     }
     const plural = results.length > 1 ? 's' : ''
-    searchStatus.innerHTML = `${results.length} question${plural}/réponse${plural} trouvée${plural} 🙌`
+    searchStatus.innerHTML = `
+        ${results.length} question${plural}/réponse${plural} trouvée${plural} 🙌
+    `
 
     const NB_VISIBLE_RESULTS = 5
     const searchResults = results.map((result) => {
-        const url = result.article.url
-        const title = highlightText(result.article.title, regMap)
+        const url = result.question.url
+        const title = highlightText(result.question.title, regMap)
         return `<li><a href="${url}">${title}</a></li>`
     })
     if (resultsLength <= NB_VISIBLE_RESULTS) {
@@ -104,14 +120,12 @@ function showResults(results, regMap, searchStatus, resultList) {
 
 /**
  * Highlight the text in the UI
- * @param  {String}  text The content to highlight
- * @param  {List}  regMap Regular expressions for the highlights
  */
-function highlightText(text, regMap) {
+function highlightText(text: string, regMap: RegExp[]) {
     // TODO: deal with close matches when multiple words are looked for,
     // it does not look trivial because you have to memorize positions
     // then create extracts.
-    // For instance: `microsoft github`
+    // For instance: `cas contact`
     const extractBoundariesSize = 100
     const textLength = text.length
     let extracts = []
@@ -141,9 +155,8 @@ function highlightText(text, regMap) {
 
 /**
  * Update the URL with a query string for the search string
- * @param  {String} query The search query
  */
-function updateURL(query) {
+function updateURL(query: string) {
     // Create the properties
     let state = history.state
     let title = document.title

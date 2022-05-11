@@ -691,4 +691,4 @@ export default [
     'êtes',
     'être',
     'ô',
-]
+] as string[]
