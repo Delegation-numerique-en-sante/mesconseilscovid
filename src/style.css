@@ -326,6 +326,10 @@ legend h1 {
 }
 .recherche #search-results summary {
     text-align: center;
+    font-size: 1rem;
+}
+.recherche #search-results ul {
+    font-size: 1rem;
 }
 
 .introduction-block {
