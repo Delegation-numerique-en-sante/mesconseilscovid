@@ -41,6 +41,7 @@ PATHS_TO_WATCH = {
     "contenus/thematiques/*.md": ["thematiques", "index"],
     "templates/index.html": ["index"],
     "templates/thematique.html": ["thematiques"],
+    "templates/*.jinja2": ["thematiques", "index"],
 }
 
 

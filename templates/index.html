@@ -65,19 +65,7 @@
             </div>
         </section>
 
-        <section id="recherche" class="recherche">
-            <div class="block">
-                <form action="https://duckduckgo.com/" method="get" id="form-search">
-                  <label for="input-search">Termes de votre recherche :</label>
-                  <input type="search" name="q" id="input-search" required>
-                  <input type="hidden" name="sites" value="mesconseilscovid.sante.gouv.fr">
-                  <button class="button">Chercher</button>
-                  <button class="button button-outline" type="reset">Annuler</button>
-                </form>
-                <p id="search-status" role="status"></p>
-                <div id="search-results"></div>
-            </div>
-        </section>
+        {% include '_recherche.jinja2' %}
 
 {% macro bloc_introduction() %}
         <h1>Isolement, tests, vaccins, attestations, contact à risque…</h1>
