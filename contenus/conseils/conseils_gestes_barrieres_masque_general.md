@@ -1,7 +1,8 @@
 <div class="conseil">
 
-Le **port du masque est obligatoire** dans les **[lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-gestes-barrieres)** pour toute personne de 6 ans et plus. Il peut aussi être rendu obligatoire dans certains **lieux publics ouverts** (rues, marchés, abords des écoles…) sur décision du préfet.
+Le **port du masque est obligatoire** dans les **transports** et dans les **lieux de santé** (hôpitaux, cabinets médicaux, pharmacies, laboratoires d’analyse…).
 
+Il reste **recommandé**, en particulier quand on est en **contact proche** avec beaucoup de gens, dans les lieux clos **mal ventilés**, et pour les **personnes fragiles**.
 </div>
 
 Les mesures de **distanciation physique** :
