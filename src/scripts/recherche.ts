@@ -20,7 +20,7 @@ export function onload(
     resultList: HTMLElement,
     resetButton: HTMLElement
 ) {
-    let query = new URLSearchParams(window.location.search).get('s')
+    const query = new URLSearchParams(window.location.search).get('s')
     if (!query) return
     input.value = query
     resetButton.removeAttribute('hidden')
@@ -37,20 +37,20 @@ export function search(
     resultList: HTMLElement
 ) {
     // Create a regex for each query
-    let regMap = query
+    const regMap = query
         .toLowerCase()
         .split(' ')
         .filter((word) => word.length && !STOPWORDS.includes(word))
         .map((word) => new RegExp(word, 'i'))
 
     // Get and sort the results
-    let results: Result[] = searchIndex
+    const results: Result[] = searchIndex
         .reduce((results: Result[], question: Question) => {
             // Setup priority count
             let priority = 0
 
             // Assign priority
-            for (let reg of regMap) {
+            for (const reg of regMap) {
                 if (reg.test(question.title)) {
                     priority += 100
                 }
@@ -59,7 +59,7 @@ export function search(
                 if (reg.test(question.title_page)) {
                     priority += 50
                 }
-                let occurences = question.content.match(reg)
+                const occurences = question.content.match(reg)
                 if (occurences) {
                     priority += occurences.length
                 }
@@ -135,7 +135,7 @@ function showResults(
  */
 function highlightText(text: string, regMap: RegExp[]) {
     let extract = text
-    for (let reg of regMap) {
+    for (const reg of regMap) {
         const index = text.search(reg)
         if (index === -1) {
             continue
@@ -155,8 +155,8 @@ function highlightText(text: string, regMap: RegExp[]) {
  */
 function updateURL(query: string) {
     // Create the properties
-    let state = history.state
-    let title = document.title
+    const state = history.state
+    const title = document.title
     let url = window.location.origin + window.location.pathname
     if (query) {
         url += '?s=' + encodeURI(query)
