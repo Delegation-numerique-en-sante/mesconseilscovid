@@ -140,9 +140,7 @@ function highlightText(text: string, regMap: RegExp[]) {
         if (index === -1) {
             continue
         }
-        extract = extract.replace(reg, function (match) {
-            return `<mark>${match}</mark>`
-        })
+        extract = extract.replace(reg, (match) => `<mark>${match}</mark>`)
     }
     if (!extract.length) {
         return text
