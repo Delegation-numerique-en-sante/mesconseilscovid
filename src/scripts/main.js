@@ -106,6 +106,7 @@ function initRecherche() {
     form.addEventListener('reset', () => {
         search('', searchIndex, searchStatus, resultList)
         searchStatus.innerHTML = ''
+        resetButton.setAttribute('hidden', '')
     })
 
     // Check for query strings onload
