@@ -140,10 +140,9 @@ function highlightText(text: string, regMap: RegExp[]) {
         if (index === -1) {
             continue
         }
-        // TODISCUSS: we replace with the source but in case there is
-        // an uppercase letter it will disappear from the extract
-        // (is that confusing or closer to what is expected?)
-        extract = extract.replace(reg, `<mark>${reg.source}</mark>`)
+        extract = extract.replace(reg, function (match) {
+            return `<mark>${match}</mark>`
+        })
     }
     if (!extract.length) {
         return text
