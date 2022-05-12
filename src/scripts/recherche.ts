@@ -17,11 +17,13 @@ export function onload(
     input: HTMLInputElement,
     searchIndex: [],
     searchStatus: HTMLElement,
-    resultList: HTMLElement
+    resultList: HTMLElement,
+    resetButton: HTMLElement
 ) {
     let query = new URLSearchParams(window.location.search).get('s')
     if (!query) return
     input.value = query
+    resetButton.removeAttribute('hidden')
     search(query, searchIndex, searchStatus, resultList)
 }
 

@@ -1,4 +1,5 @@
 @import 'npm:pikaday/css/pikaday.css';
+@import '_recherche.css';
 
 .pika-mcc-theme .is-today .pika-button {
     color: #000091;
@@ -312,24 +313,6 @@ legend h1 {
     .block ul {
         padding-left: 1rem;
     }
-}
-.recherche {
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
-}
-.recherche form,
-.recherche #search-status {
-    text-align: center;
-}
-.recherche .button {
-    font-size: 1rem;
-}
-.recherche #search-results summary {
-    text-align: center;
-    font-size: 1rem;
-}
-.recherche #search-results ul {
-    font-size: 1rem;
 }
 
 .introduction-block {

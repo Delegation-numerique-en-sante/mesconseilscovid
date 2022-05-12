@@ -1,10 +1,12 @@
 <section id="recherche" class="recherche">
     <div class="block">
         <form action="https://duckduckgo.com/" method="get" id="form-search" role="search">
-          <input type="search" name="q" id="input-search" required aria-label="Termes de recherche">
+          <div class="search-bar">
+            <input type="search" name="q" id="input-search" required aria-label="Termes de recherche">
+            <button type="reset" id="reset-search" aria-label="Effacer" title="Effacer" hidden>×</button>
+          </div>
           <input type="hidden" name="sites" value="mesconseilscovid.sante.gouv.fr">
           <button class="button">Chercher</button>
-          <button class="button button-outline" type="reset">Annuler</button>
         </form>
         <p id="search-status" role="status"></p>
         <div id="search-results"></div>

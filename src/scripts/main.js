@@ -81,6 +81,7 @@ function initRecherche() {
     let input = document.querySelector('#input-search')
     let resultList = document.querySelector('#search-results')
     let searchStatus = document.querySelector('#search-status')
+    let resetButton = document.querySelector('#reset-search')
 
     // Make sure required content exists
     if (!form || !input || !resultList || !searchStatus || !searchIndex) return
@@ -93,6 +94,11 @@ function initRecherche() {
 
     // Create a typeahead handler
     form.addEventListener('keyup', () => {
+        if (input.value) {
+            resetButton.removeAttribute('hidden')
+        } else {
+            resetButton.setAttribute('hidden', '')
+        }
         search(input.value, searchIndex, searchStatus, resultList)
     })
 
@@ -103,7 +109,7 @@ function initRecherche() {
     })
 
     // Check for query strings onload
-    onload(input, searchIndex, searchStatus, resultList)
+    onload(input, searchIndex, searchStatus, resultList, resetButton)
 }
 
 registerTimeAgo('fr', function (number, index) {
