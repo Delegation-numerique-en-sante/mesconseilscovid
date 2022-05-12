@@ -22,6 +22,7 @@
     padding: 0;
 }
 .recherche .search-bar input {
+    width: 100%;
     flex-grow: 1;
     border: none;
     margin: 0;
