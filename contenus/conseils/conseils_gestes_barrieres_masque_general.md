@@ -1,8 +1,8 @@
 <div class="conseil">
 
-Le **port du masque est obligatoire** dans les **transports** et dans les **lieux de santé** (hôpitaux, cabinets médicaux, pharmacies, laboratoires d’analyse…).
+Le **port du masque est obligatoire** dans les **lieux de santé** (hôpitaux, cabinets médicaux, pharmacies, laboratoires d’analyse…).
 
-Il reste **recommandé**, en particulier quand on est en **contact proche** avec beaucoup de gens, dans les lieux clos **mal ventilés**, et pour les **personnes fragiles**.
+Il reste **recommandé**, en particulier quand on est en **contact proche** avec beaucoup de gens, dans les lieux clos **mal ventilés**, dans les **transports**, et pour les **personnes fragiles**.
 </div>
 
 Les mesures de **distanciation physique** :
