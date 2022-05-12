@@ -31,13 +31,17 @@
 .recherche .search-bar input:focus {
     outline: none;
 }
+.recherche .search-bar input[type='search']::-webkit-search-cancel-button {
+    display: none;
+}
 .recherche .search-bar button {
     border: none;
     background: transparent;
     font-size: 24px;
     color: #777;
-    padding: 8px;
+    padding: 0 8px;
 }
+
 .recherche #search-status {
     text-align: center;
     margin: 0;
