@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-05-13
+
+* met à jour les conseils sur port du masque
+* correction mineure sur le style des tableaux
+
 ## 2022-05-04
 
 * met à jour la page sur les tests de dépistage
