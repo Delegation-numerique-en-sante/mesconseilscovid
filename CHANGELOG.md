@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-05-16
+
+* fin de l’obligation de port du masque dans les transports
+
 ## 2022-05-13
 
 * met à jour les conseils sur port du masque
