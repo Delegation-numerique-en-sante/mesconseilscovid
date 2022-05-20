@@ -4,7 +4,7 @@
     "npm": ">=6.14.11 <7"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.12",
+    "@babel/core": "^7.18.0",
     "@babel/eslint-parser": "^7.17.0",
     "@babel/eslint-plugin": "^7.17.7",
     "@babel/preset-env": "^7.17.12",
