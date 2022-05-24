@@ -14,8 +14,6 @@ certifi==2021.10.8
     # via
     #   httpcore
     #   httpx
-charset-normalizer==2.0.7
-    # via httpx
 cython==0.29.24
     # via selectolax
 dateparser==1.1.1
@@ -28,9 +26,9 @@ filelock==3.3.2
     #   virtualenv
 h11==0.12.0
     # via httpcore
-httpcore==0.14.5
+httpcore==0.15.0
     # via httpx
-httpx==0.22.0
+httpx==0.23.0
     # via -r requirements.in
 idna==3.3
     # via
