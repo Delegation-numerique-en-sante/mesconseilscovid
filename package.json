@@ -21,7 +21,7 @@
     "@parcel/transformer-css": "^2.5.0",
     "@parcel/transformer-html": "^2.5.0",
     "@parcel/transformer-image": "^2.5.0",
-    "@parcel/transformer-posthtml": "^2.5.0",
+    "@parcel/transformer-posthtml": "^2.6.0",
     "@parcel/transformer-webmanifest": "^2.5.0",
     "@parcel/transformer-xml": "^2.5.0",
     "@parcel/utils": "^2.5.0",
