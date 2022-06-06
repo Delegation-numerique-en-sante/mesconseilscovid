@@ -31,7 +31,7 @@
 
     **Isolez-vous** si vous êtes :
 
-    * testé **positif** à la Covid, ou dès que vous ressentez des [symptômes évocateurs de la Covid](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html#quels-sont-les-symptomes-de-la-covid) et en attendant le résultat de votre test de dépistage ;
+    * testé **positif** à la Covid, ou dès que vous ressentez des [symptômes évocateurs de la Covid](j-ai-des-symptomes-covid.html#quels-sont-les-symptomes-de-la-covid) et en attendant le résultat de votre test de dépistage ;
     * alerté d’un **contact à risque**, **sauf** si vous êtes **vacciné** ou que vous avez eu la Covid dans les deux mois précédents.
 
     Dans tous les cas, vous serez indemnisé sans jour de carence.
