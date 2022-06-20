@@ -22,7 +22,7 @@
     "@parcel/transformer-html": "^2.5.0",
     "@parcel/transformer-image": "^2.5.0",
     "@parcel/transformer-posthtml": "^2.5.0",
-    "@parcel/transformer-webmanifest": "^2.5.0",
+    "@parcel/transformer-webmanifest": "^2.6.1",
     "@parcel/transformer-xml": "^2.5.0",
     "@parcel/utils": "^2.5.0",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
