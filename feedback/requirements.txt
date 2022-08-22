@@ -40,7 +40,7 @@ typing-extensions==3.10.0.2
     #   typing-inspect
 typing-inspect==0.7.1
     # via dataclasses-json
-ua-parser==0.10.0
+ua-parser==0.16.0
     # via user-agents
 user-agents==2.2.0
     # via mesconseilscovid-feedback (setup.py)
