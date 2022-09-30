@@ -9,7 +9,7 @@
     "@babel/eslint-plugin": "^7.17.7",
     "@babel/preset-env": "^7.18.2",
     "@babel/register": "^7.17.7",
-    "@mermaid-js/mermaid-cli": "^9.1.2",
+    "@mermaid-js/mermaid-cli": "^9.1.6",
     "@parcel/babel-preset-env": "^2.5.0",
     "@parcel/optimizer-htmlnano": "^2.5.0",
     "@parcel/packager-css": "^2.5.0",
