@@ -13,7 +13,7 @@
     "@parcel/babel-preset-env": "^2.5.0",
     "@parcel/optimizer-htmlnano": "^2.5.0",
     "@parcel/packager-css": "^2.5.0",
-    "@parcel/packager-html": "^2.5.0",
+    "@parcel/packager-html": "^2.8.0",
     "@parcel/packager-raw-url": "^2.5.0",
     "@parcel/packager-xml": "^2.5.0",
     "@parcel/resolver-glob": "^2.5.0",
