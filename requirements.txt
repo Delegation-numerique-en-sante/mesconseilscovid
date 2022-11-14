@@ -99,14 +99,12 @@ sniffio==1.2.0
 text-unidecode==1.3
     # via python-slugify
 toml==0.10.2
-    # via
-    #   -r requirements.in
-    #   tox
+    # via -r requirements.in
 tomli==2.0.1
     # via pytest
 tornado==6.1
     # via livereload
-tox==3.25.0
+tox==3.27.1
     # via -r requirements.in
 tzdata==2021.5
     # via pytz-deprecation-shim
