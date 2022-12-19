@@ -197,7 +197,7 @@ jobs:
             short-length: 8
 
       - name: Download build
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}
           path: dist
