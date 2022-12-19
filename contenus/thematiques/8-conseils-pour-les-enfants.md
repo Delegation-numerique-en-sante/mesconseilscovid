@@ -226,47 +226,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
 
 
-.. question:: Comment obtenir une attestation de vaccination (valable comme « passe sanitaire ») pour un mineur de 12 ans et plus ?
-    :level: 3
-
-    Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** (sur papier) comportant un QR code.
-
-    Elle sera valable comme « passe sanitaire » en France **7 jours après la dernière dose** (dose unique en cas de contamination antérieure, ou 2<sup>e</sup> dose dans les autres cas). Pour les voyages à l’international, le délai est de 14 jours.
-
-    Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur le smartphone de l’adolescent(e) ou de ses parents.
-
-    <div class="voir-aussi">
-
-    * Pour plus d’informations, consultez notre page sur [les voyages et le passe sanitaire](pass-sanitaire-qr-code-voyages.html).
-
-    </div>
-
-
-.. question:: La vaccination des mineurs de 12 ans et plus est-t-elle obligatoire pour obtenir le « passe sanitaire » ?
-    :level: 3
-
-    Il y a plusieurs façons d’obtenir un passe sanitaire :
-
-    * une **attestation de vaccination complète** (la dose de rappel n’est **pas obligatoire** pour les mineurs) ;
-    * un **test PCR ou antigénique négatif** de moins de 24 h ;
-    * un **test PCR ou antigénique positif** de plus de 11 jours, aussi appelé [certificat de rétablissement](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) ;
-    * un [certificat de contre-indication à la vaccination](pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-sanitaire) établi par l’Assurance Maladie.
-
-    <div class="voir-aussi">
-
-    * Pour plus d’informations, consultez notre page sur [les voyages et le passe sanitaire](pass-sanitaire-qr-code-voyages.html).
-
-    </div>
-
-
-.. question:: La dose de rappel (dite 3<sup>e</sup> dose) est-elle obligatoire pour le passe sanitaire des moins de 18 ans ?
-    :level: 3
-
-    Les adolescent(e)s de **12 à 17 ans** peuvent recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) : ce rappel vaccinal est **recommandé**, mais il n’est **pas obligatoire** dans le cadre du passe sanitaire.
-
-    La dose de rappel est nécessaire pour prolonger la validité du passe sanitaire seulement à partir de **18 ans et 1 mois.**
-
-
 .. section:: Questions médicales et dépistage
     :tags: 0 à 4 ans, 5 à 11 ans, 12 à 17 ans
 

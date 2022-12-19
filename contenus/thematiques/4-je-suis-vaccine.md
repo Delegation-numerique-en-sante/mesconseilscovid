@@ -5,8 +5,6 @@
 <header>
 </header>
 
-.. renvoi:: pass-sanitaire-qr-code-voyages.html#quand-dois-je-recevoir-mon-rappel-pour-conserver-mon-passe-sanitaire
-
 .. renvoi:: j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid
 
 .. renvoi:: je-veux-me-faire-vacciner.html#est-ce-que-la-vaccination-rend-positif-a-la-covid
@@ -51,11 +49,9 @@
     * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
 
 
-.. renvoi:: pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code
-
 .. question:: Est-ce que je peux voyager une fois vacciné(e) ?
 
-    Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou « passe sanitaire ») au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, valable dans l’espace Européen, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionnel de santé qui vous a vacciné.
+    Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, valable dans l’espace Européen, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionnel de santé qui vous a vacciné.
 
     Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat.
 
