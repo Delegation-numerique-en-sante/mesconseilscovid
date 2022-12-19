@@ -17,7 +17,7 @@ jobs:
           sudo localectl set-locale LANG=fr_FR.utf8
 
       - name: Set up Python 3.8
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.8
 
@@ -124,7 +124,7 @@ jobs:
             short-length: 8
 
       - name: Set up Python 3.8
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.8
 
