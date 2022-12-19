@@ -123,15 +123,6 @@
     </table>
 
 
-    #### Cas particulier : test positif avant le 15 février
-
-    Si votre résultat de test positif date d’**avant le 15 février** et de **plus de 3 mois** après votre vaccination initiale, vous pouvez obtenir un certificat de rétablissement **sans date d’expiration** :
-
-    - pour cela, il faut **combiner** votre **test positif** avec votre **certificat de vaccination** dans la rubrique **Pass+** de l’application **TousAntiCovid** ;
-
-    - vous pouvez vous [aider de cette vidéo explicative](https://tousanticovid.stonly.com/kb/guide/fr/pass-un-outil-pour-combiner-les-certificats-70S5BKyI4g/Steps/1148507).
-
-
 .. question:: Je rencontre des difficultés techniques sur le portail SI-DEP, que faire ?
     :level: 3
 
