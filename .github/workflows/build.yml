@@ -203,9 +203,6 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Set up Playwright
-        uses: microsoft/playwright-github-action@v1
-
       - name: Configure Playwright browser cache
         uses: actions/cache@v2
         with:
@@ -226,10 +223,9 @@ jobs:
         run: |
           make install-js
 
-      - name: Download browser
+      - name: Set up Playwright
         run: |
-          npx playwright install-deps
-          npx playwright install "${{ matrix.browser }}"
+          npx playwright install --with-deps "${{ matrix.browser }}"
 
       - name: Run browser tests
         run: |
