@@ -125,7 +125,6 @@ dist/index.html: src/index.html $(firstword $(THEMATIQUES)) static/sitemap.xml
 
 # Construire l’index (page d’accueil + questionnaire)
 src/index.html: build.py construction/*.py construction/directives/*.py \
- contenus/actualites/*.toml \
  contenus/config/*.md contenus/conseils/*.md contenus/meta/*.md contenus/questions/*.md contenus/réponses/*.md contenus/statuts/*.md contenus/suivi/*.md \
  contenus/thematiques/*.md \
  templates/index.html
