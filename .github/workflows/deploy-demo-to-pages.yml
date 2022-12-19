@@ -44,8 +44,7 @@ jobs:
           make build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
+          token: ${{ secrets.ACCESS_TOKEN }}
+          folder: dist
