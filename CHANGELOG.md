@@ -1,5 +1,11 @@
 # Changelog
 
+## 2022-12-19
+
+* fin du passe sanitaire et des restrictions pour voyager
+  entre la métropole et l’Outre-mer au 1er août 2022
+* supprime les anciennes actualités
+
 ## 2022-05-16
 
 * fin de l’obligation de port du masque dans les transports
