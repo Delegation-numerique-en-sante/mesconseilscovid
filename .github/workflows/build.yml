@@ -228,6 +228,7 @@ jobs:
 
       - name: Download browser
         run: |
+          npx playwright install-deps
           npx playwright install "${{ matrix.browser }}"
 
       - name: Run browser tests
