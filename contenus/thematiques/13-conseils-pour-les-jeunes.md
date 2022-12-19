@@ -15,18 +15,6 @@
 
 .. section:: Ma vie quotidienne
 
-.. question:: À partir de quel âge le passe sanitaire est-il demandé ?
-    :level: 3
-
-    Le **passe sanitaire** est demandé à partir de **12 ans et 2 mois**.
-
-
-.. question:: Où le passe sanitaire est-il obligatoire ?
-    :level: 3
-
-    Il faut présenter un **passe sanitaire** pour entrer dans un **hôpital** (sauf pour les **urgences**), une **maison de retraite**, ou un établissement pour les personnes en situation de handicap.
-
-
 .. question:: Est-ce que porter le masque sous le nez est efficace ?
     :level: 3
 
@@ -411,31 +399,6 @@
     * Si tu as **déjà eu la Covid** il y a au moins **2 mois**, il faudra apporter la preuve de cette contamination :
         * un ancien **test positif** (PCR ou antigénique). Si tu n’as pas conservé ton ancien test positif, n’hésite pas à demander à ton médecin de te prescrire une sérologie (prise de sang) qui prouvera que tu as déjà été contaminé par la Covid.
         * *ou* une **sérologie** (prise de sang) indiquant la présence d’anticorps (et donc d’une ancienne contamination à la Covid).
-
-
-.. question:: Je suis vacciné(e). Comment faire pour avoir un passe sanitaire ?
-    :level: 3
-
-    Lors de ton rendez-vous de vaccination, le professionnel de santé t’a remis une **attestation de vaccination** (sur papier) comportant un QR code.
-
-    Elle sera valable comme « passe sanitaire » en France **7 jours après ta dernière dose**. Si tu veux utiliser ce passe pour voyager, tu devras attendre 14 jours.
-
-    Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur ton smartphone.
-
-    <div class="voir-aussi">
-
-    * Pour plus d’informations, consulte notre page sur [les voyages et le passe sanitaire](pass-sanitaire-qr-code-voyages.html).
-
-    </div>
-
-
-.. question:: La vaccination est-elle obligatoire obtenir le passe sanitaire ?
-    :level: 3
-
-    Si tu as **12 ans ou plus**, une attestation de vaccination complète te donnera accès aux lieux qui nécessitent un **passe sanitaire**, mais tu peux aussi présenter :
-    * un [certificat de rétablissement](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (**résultat positif** à un test PCR ou antigénique de plus de 11 jours),
-    * une attestation de **contre-indication** à la vaccination ;
-    * un **test PCR ou antigénique négatif** de moins de 24 h.
 
 
 .. section:: Les symptômes et les tests de dépistage

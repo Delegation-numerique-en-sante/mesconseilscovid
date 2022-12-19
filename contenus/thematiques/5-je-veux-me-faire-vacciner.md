@@ -24,8 +24,6 @@
 
     La 4<sup>e</sup> dose est **recommandée** pour ces catégories, car la protection donnée par la vaccination diminue avec le temps et que le virus de la Covid circule toujours.
 
-    Elle n’est **pas obligatoire** pour prolonger la validité du passe sanitaire.
-
     Le deuxième rappel n’est pas ouvert aux autres catégories de population à l’heure actuelle.
 
     <div class="voir-aussi">
@@ -41,17 +39,11 @@
 
     La date de la 3<sup>e</sup> dose dépend de votre situation.
 
-    - Vous avez **eu la Covid** au moins 3 mois après votre primo-vaccination : vous n’avez **pas besoin** de recevoir de dose de rappel pour prolonger votre passe sanitaire.
+    - Vous avez **eu la Covid** au moins 3 mois après votre primo-vaccination : la première dose de rappel n’est pas nécessaire.
 
-    - Vous avez **plus de 18 ans et 1 mois** : vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre primo-vaccination pour prolonger votre passe sanitaire.
+    - Vous avez **plus de 18 ans et 1 mois** : la première dose de rappel est recommandée entre **3 mois et 4 mois** après votre primo-vaccination.
 
-    - Vous avez entre **12 et 17 ans**, vous pouvez faire un rappel dès **6 mois** après votre primo-vaccination. Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.
-
-    <div class="voir-aussi">
-
-    - [J’ai eu la Covid après ma primo-vaccination, comment prolonger mon passe sanitaire ?](pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-sanitaire)
-
-    </div>
+    - Vous avez entre **12 et 17 ans** : la première dose de rappel est recommandée **6 mois** après votre primo-vaccination.
 
 
 .. question:: J’ai été vacciné(e) avec le vaccin Janssen. Comment se passe mon rappel ?
@@ -61,7 +53,7 @@
 
     #### Vous n’avez **pas eu la Covid**
 
-    1. Vous devrez recevoir une **dose supplémentaire** de vaccin Pfizer ou Moderna (dose complète) dans les **4 semaines à 2 mois** après votre injection. Cette 2<sup>e</sup> injection complétera votre **vaccination initiale** et prolongera votre **passe sanitaire**.
+    1. Vous devrez recevoir une **dose supplémentaire** de vaccin Pfizer ou Moderna (dose complète) dans les **4 semaines à 2 mois** après votre injection. Cette 2<sup>e</sup> injection complétera votre **vaccination initiale**.
 
     2. Vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
 
@@ -115,7 +107,7 @@
 
     1. La dose supplémentaire n’est **pas nécessaire**.
 
-    2. Vous devrez recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **4 semaines à 2 mois** après votre injection. Ce rappel prolongera votre passe sanitaire.
+    2. Vous devrez recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **4 semaines à 2 mois** après votre injection.
 
     <div class="tableaux-vaccination-complete">
 
@@ -165,7 +157,7 @@
     #### Vous avez eu la Covid **après** votre injection de **Janssen**
 
     - Vous avez été testé positif **dans les 15 jours** suivant cette injection :
-        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complétera votre **vaccination initiale** et prolongera votre **passe sanitaire** ;
+        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complétera votre **vaccination initiale** ;
         2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
 
     <div class="tableaux-vaccination-complete">
@@ -316,7 +308,7 @@
         </table>
 
     2. si vous avez eu la Covid **plus de 15 jours** après cette dose supplémentaire :
-        * vous n’avez **pas besoin** de recevoir une dose de rappel pour utiliser votre passe sanitaire en France. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
+        * vous n’avez **pas besoin** de recevoir une dose de rappel. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
 
         <div class="tableaux-vaccination-complete">
 
@@ -387,9 +379,6 @@
     Pensez à préciser au professionnel de santé qui vous vaccinera que vous avez été contaminé avant votre première dose, pour que cette dose soit bien prise en compte comme un rappel.
 
 
-.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-sanitaire
-
-
 .. question:: Je suis cas contact, est-ce que je peux faire mon rappel ?
     :level: 3
 
@@ -415,14 +404,6 @@
     En effet, pour le moment, les scientifiques ne savent pas faire un lien direct entre le **taux d’anticorps** et le **niveau de protection** contre une nouvelle contamination.
 
     Même si votre sérologie est **positive**, et que votre taux d’anticorps est jugé relativement élevé, la Haute Autorité de Santé préconise actuellement de **faire un rappel vaccinal**.
-
-    Notez que la sérologie positive n’est **pas un certificat de rétablissement** et ne peut pas tenir lieu de passe sanitaire. Pour cela, il faut un résultat positif à un test antigénique ou à un test PCR.
-
-     <div class="voir-aussi">
-
-    - [Comment obtenir un certificat de rétablissement ?](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)
-
-    </div>
 
 
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
@@ -551,13 +532,13 @@
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses faire ?
     :level: 3
 
-    - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe sanitaire une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
+    - Si vous n’êtes pas encore vacciné(e) contre la Covid, votre **primo-vaccination** demandera **1 ou 2** injections de vaccin, selon votre situation.
 
     <div class="tableaux-vaccination-complete">
       {{ tableau_vaccination('vaccination_initiale') }}
     </div>
 
-    Pour conserver ce passe, si vous avez plus de **18 ans et 1 mois**, vous devrez ensuite recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) dans un délai de **3 à 4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
+    Si vous avez plus de **18 ans et 1 mois**, vous devrez ensuite recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) dans un délai de **3 à 4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
 
     <div class="tableaux-vaccination-complete">
       {{ tableau_vaccination('rappel_vaccinal') }}
@@ -617,12 +598,6 @@
     Dans l’état actuel des connaissances scientifiques, il n’y a **pas** de contre-indication à la vaccination des patients présentant des symptômes prolongés de la Covid (ou « Covid long »).
 
     Les maladies auto-immunes, dont la polyarthrite rhumatoïde et la sclérose en plaques (SEP), ne sont **pas** non plus des contre-indications à la vaccination contre la Covid.
-
-    <div class="voir-aussi">
-
-    - [Je ne peux pas me faire vacciner, comment obtenir un passe sanitaire ?](pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-sanitaire)
-
-    </div>
 
 
 .. question:: Je suis cas contact, est-ce que je peux me faire vacciner ?
