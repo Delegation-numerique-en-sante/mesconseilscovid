@@ -27,6 +27,11 @@ describe('Thématiques', function () {
         let messages = recordConsoleMessages(page)
         await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
 
+        await waitForPlausibleTrackingEvent(
+            page,
+            'pageview:conseils-pour-les-enfants.html'
+        )
+
         await Promise.all([
             page.click(
                 '.thematiques a >> text="Je suis cas contact Covid, que faire\u00a0?"'
@@ -36,8 +41,8 @@ describe('Thématiques', function () {
             }),
         ])
 
-        await waitForPlausibleTrackingEvent(page, 'pageview:cas-contact-a-risque.html'),
-            assert.lengthOf(messages, 3)
+        await waitForPlausibleTrackingEvent(page, 'pageview:cas-contact-a-risque.html')
+        assert.lengthOf(messages, 3)
         assert.include(messages[0], {
             n: 'pageview',
             u: 'http://localhost/conseils-pour-les-enfants.html',
