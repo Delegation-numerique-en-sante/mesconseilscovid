@@ -83,16 +83,16 @@ describe('Parcours', function () {
 
             await Promise.all([
                 page.click(
-                    '#page.ready .thematiques a >> text="Passe sanitaire, que faut-il savoir\u00a0?"'
+                    '#page.ready .thematiques a >> text="Je suis cas contact Covid, que faire\u00a0?"'
                 ),
                 page.waitForNavigation({
-                    url: '**/pass-sanitaire-qr-code-voyages.html',
+                    url: '**/cas-contact-a-risque.html',
                 }),
             ])
 
             await waitForPlausibleTrackingEvent(
                 page,
-                'pageview:pass-sanitaire-qr-code-voyages.html'
+                'pageview:cas-contact-a-risque.html'
             )
 
             assert.lengthOf(messages, 3)
@@ -102,12 +102,12 @@ describe('Parcours', function () {
             })
             assert.include(messages[1], {
                 n: 'Navigue vers une thématique depuis les conseils',
-                p: '{"chemin":"/conseils → /pass-sanitaire-qr-code-voyages.html","profil":"moi"}',
+                p: '{"chemin":"/conseils → /cas-contact-a-risque.html","profil":"moi"}',
                 u: 'http://localhost/conseils',
             })
             assert.include(messages[2], {
                 n: 'pageview',
-                u: 'http://localhost/pass-sanitaire-qr-code-voyages.html',
+                u: 'http://localhost/cas-contact-a-risque.html',
             })
         }
     })
