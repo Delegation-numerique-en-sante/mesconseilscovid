@@ -29,17 +29,14 @@ describe('Thématiques', function () {
 
         await Promise.all([
             page.click(
-                '.thematiques a >> text="Passe sanitaire, que faut-il savoir\u00a0?"'
+                '.thematiques a >> text="Je suis cas contact Covid, que faire\u00a0?"'
             ),
             page.waitForNavigation({
-                url: '**/pass-sanitaire-qr-code-voyages.html',
+                url: '**/cas-contact-a-risque.html',
             }),
         ])
 
-        await waitForPlausibleTrackingEvent(
-            page,
-            'pageview:pass-sanitaire-qr-code-voyages.html'
-        ),
+        await waitForPlausibleTrackingEvent(page, 'pageview:cas-contact-a-risque.html'),
             assert.lengthOf(messages, 3)
         assert.include(messages[0], {
             n: 'pageview',
@@ -47,12 +44,12 @@ describe('Thématiques', function () {
         })
         assert.include(messages[1], {
             n: 'Navigue vers une thématique depuis une autre thématique',
-            p: '{"chemin":"/conseils-pour-les-enfants.html → /pass-sanitaire-qr-code-voyages.html"}',
+            p: '{"chemin":"/conseils-pour-les-enfants.html → /cas-contact-a-risque.html"}',
             u: 'http://localhost/conseils-pour-les-enfants.html',
         })
         assert.include(messages[2], {
             n: 'pageview',
-            u: 'http://localhost/pass-sanitaire-qr-code-voyages.html',
+            u: 'http://localhost/cas-contact-a-risque.html',
         })
     })
 })

@@ -25,12 +25,9 @@ describe('Pages', function () {
         await waitForPlausibleTrackingEvent(page, 'pageview:introduction')
 
         await page.click(
-            '.thematiques a >> text="Passe sanitaire, que faut-il savoir\u00a0?"'
+            '.thematiques a >> text="Je suis cas contact Covid, que faire\u00a0?"'
         )
-        await waitForPlausibleTrackingEvent(
-            page,
-            'pageview:pass-sanitaire-qr-code-voyages.html'
-        )
+        await waitForPlausibleTrackingEvent(page, 'pageview:cas-contact-a-risque.html')
 
         assert.lengthOf(messages, 4)
         assert.include(messages[0], {
@@ -43,12 +40,12 @@ describe('Pages', function () {
         })
         assert.include(messages[2], {
             n: 'Navigue vers une thématique depuis l’accueil',
-            p: '{"chemin":"/introduction → /pass-sanitaire-qr-code-voyages.html"}',
+            p: '{"chemin":"/introduction → /cas-contact-a-risque.html"}',
             u: 'http://localhost/introduction',
         })
         assert.include(messages[3], {
             n: 'pageview',
-            u: 'http://localhost/pass-sanitaire-qr-code-voyages.html',
+            u: 'http://localhost/cas-contact-a-risque.html',
         })
     })
 
