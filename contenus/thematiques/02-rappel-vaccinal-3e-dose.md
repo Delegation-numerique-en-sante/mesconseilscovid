@@ -27,7 +27,7 @@
     + les personnes souffrant de comorbidités,
     + les personnes immunodéprimées,
     + les femmes enceintes,
-    + les professionnels des secteurs sanitaire et du médico-social
+    + les professionnels des secteurs sanitaire et du médico-social,
     + l’entourage des plus fragiles.
 
 
