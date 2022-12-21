@@ -26,7 +26,9 @@ HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
 CONTENUS_DIR = HERE / "contenus"
 STATIC_DIR = HERE / "static"
-NB_OF_DISPLAYED_THEMATIQUES = 12
+
+NB_PAGES_THEMATIQUES_ACCUEIL = 8
+NB_PAGES_THEMATIQUES_NAVIGATION = 6
 
 locale.setlocale(locale.LC_ALL, "fr_FR.UTF-8")
 
@@ -58,7 +60,7 @@ def index():
     fr_thematiques = [
         thematique for thematique in thematiques if thematique.lang != "en"
     ]
-    thematiques = fr_thematiques[:NB_OF_DISPLAYED_THEMATIQUES]
+    thematiques = fr_thematiques[:NB_PAGES_THEMATIQUES_ACCUEIL]
     responses["thematiques"] = thematiques
     responses["autres_thematiques"] = [
         thematique
@@ -96,7 +98,7 @@ def thematiques():
             "thematique.html",
             **{
                 "thematique": thematique,
-                "thematiques": autres_thematiques[:NB_OF_DISPLAYED_THEMATIQUES],
+                "thematiques": autres_thematiques[:NB_PAGES_THEMATIQUES_NAVIGATION],
                 "config_stats_url": responses["config_stats_url"],
                 "meta_feedback_conseils": responses["meta_feedback_conseils"],
                 "meta_unsupported_browser": responses["meta_unsupported_browser"],
