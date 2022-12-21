@@ -27,9 +27,9 @@ Pour en savoir plus :
 * [La stratégie vaccinale et la liste des publics prioritaires](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19)
 
 <div class="illustration">
-    <a href="https://solidarites-sante.gouv.fr/IMG/pdf/infog_vaccins_particuliers.pdf" class="no-icon no-type"
+    <a href="https://solidarites-sante.gouv.fr/IMG/pdf/infographie_quel_vaccin_pour_quel_public.pdf" class="no-icon no-type"
         title="Agrandir l’image : Tableau illustrant la vaccination pour le grand public.">
-        <img src="illustrations/solidarites-sante-gouv-fr-infog-vaccins-particuliers.png"
+        <img src="illustrations/solidarites-sante-gouv-fr-infographie-quel-vaccin-pour-quel-public.png"
              loading="lazy"
              alt="Agrandir l’image : Tableau illustrant la vaccination pour le grand public.">
     </a>
