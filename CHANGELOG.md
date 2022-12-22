@@ -1,5 +1,11 @@
 # Changelog
 
+## 2022-12-22
+
+* informations sur la nouvelle campagne de rappel vaccinal
+* réorganise les pages thématiques sur la page d’accueil
+* met à jour l’infographie sur la vaccination
+
 ## 2022-12-19
 
 * fin du passe sanitaire et des restrictions pour voyager
