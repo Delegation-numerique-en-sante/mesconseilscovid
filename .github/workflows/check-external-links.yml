@@ -3,7 +3,7 @@ name: Vérifie que les liens externes sont toujours là
 on:
   push:
   schedule:
-    - cron: '30 7,13,19 * * *'
+    - cron: '30 12 1,10,20 * *'
 
 jobs:
   check-external-links:
